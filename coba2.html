@@ -1,123 +1,359 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>E-SMARTBIMBEL</title>
+	<title></title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<style>
+		* {
+			padding:0;
+			margin:0;
+		}
+
+		body {
+			font-family:Verdana, Geneva, sans-serif;
+			font-size:18px;
+			background-color:#e6f5f4;
+		}
+
+		header {
+			width:100%;
+			background-color:#00a090 ;
+			z-index:1000;
+			color: white;
+			position: fixed;
+		}
+
+		/*.nav-bar {
+			color:#FFF;
+			font-size:25px;
+			cursor:pointer;
+			padding:10px 12px;
+			margin-left:10px;
+			margin-top:5px;
+			margin-bottom:5px;
+		}*/
+
+		/*.nav-bar:hover {
+			background-color:#32b5a6;
+		}*/
+
+		/*#heading{
+			float: left;
+			padding-top:15px;
+			line-height: 65px;
+			padding-left: 65px;
+		}*/
+
+		.nav-bar {
+			/*background: #26C4C2;*/
+			/*background:rgba(0,0,0,0);*/
+			/*position: fixed;*/
+			width: 100%;
+			/*height: 65px;*/
+			margin: 0px;
+			padding: 0px;
+
+		}
+
+		.nav-bar ul {
+			list-style: none;
+			float: right;
+			/*padding-right: 60px;*/
+		}
+
+		.nav-bar ul li {
+			float: left;
+			line-height: 60px
+		}
+
+		.nav-bar ul li a {
+			float:right; 
+			width:100px; 
+			display:block; 
+			text-align:center; 
+			color: #FFF;
+			text-decoration:none; 
+		}
+
+		/*.nav-bar ul li a:hover {
+			background-color:#32b5a6; 
+			display:block;
+		}*/
+
+		#search {
+			width: 850px;
+			margin: auto;
+			/*margin-right: 20px;*/
+		}
+
+		#search_text{
+			width: 750px;
+			padding: 15px 0 15px 20px;
+			font-size: 16px;
+			font-family: Montserrat, sans-serif;
+			border: 0 none;
+			height: 52px;
+			color: white;
+			outline: none;
+			background: #1f7f5c;
+			float: left;
+			box-sizing: border-box;
+			transition: all 0.15s;
+			margin-top:6px;
+			/*margin-bottom:5px;*/
+		}
+
+		::-webkit-input-placeholder { /* WebKit browsers */ 
+			color: white;
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			color: white;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color: white;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+			color: white;
+		}
+
+		#search_text:focus {
+			background: rgb(64, 151, 119);
+		}
+
+		.search_button {
+			padding: 15px 0px 15px 0px;
+			border: 0 none;
+			width: 60px;
+			height: 52px;
+			color: white;
+			background: #1f7f5c;
+			float: left;
+			box-sizing: border-box;
+			margin-top:6px;
+			cursor: pointer;
+			text-align: center;
+		}
+
+		.logout {
+			color:#FFF;
+			font-size:25px;
+			cursor:pointer;
+			padding:10px 12px;
+			/*margin-left:10px;*/
+			margin-top:10px;
+			margin-bottom:5px;
+		}
+
+		.logout:hover {
+			background-color:#32b5a6;
+			border-radius:50px;
+		}
+
+		.menu-bar {
+			color:#FFF;
+			font-size:25px;
+			cursor:pointer;
+			padding:10px 12px;
+			margin-left:10px;
+			margin-top:10px;
+			margin-bottom:5px;
+		}
+
+		.menu-bar:hover {
+			background-color:#32b5a6;
+			border-radius:50px;
+		}
+
+		#tag-menu {
+			display:none;
+		}
+
+
+		#tag-menu:checked ~ div.side-bar {
+			animation: slide-out 0.5s ease;
+			animation-fill-mode: forwards;
+		}
+
+		.side-bar {
+			position:fixed;
+			left:-280px;
+			background-color:#00a090;
+			height:100%;
+			z-index:100;
+			width:230px;
+			display: block;
+			animation: slide-in 0.5s ease;
+			animation-fill-mode: forwards;
+		}
+
+		.side-bar ul li {
+			list-style:none;
+		}
+
+		.side-bar ul li a {
+			padding:10px 20px;
+			text-decoration:none;
+			display:block;
+			color:#FFF;
+		}
+
+		.side-bar ul li a:hover{
+			/*background-color:rgba(0, 0, 0, 0.1);*/
+			background-color:#32b5a6;
+		}
+
+		.side-bar ul li a i {
+			width:50px;
+			height:35px;
+			text-align:center;
+			padding-top:15px;
+		}
+
+		@keyframes slide-in {
+			from {left: -280px;}
+			to {left: 0;}
+		}
+
+		@keyframes slide-out {
+			from {left: 0;}
+			to {left: -280px;}
+		}
+
+		.content{
+			padding: 100px 0 0 270px;
+		}
+
+		.grid-container ul{
+			margin: 0;
+			padding: 0;
+			list-style-type:none;
+			display: grid;
+			grid-column-gap:20px; 
+			grid-row-gap:5px;
+			grid-template-columns: repeat(4, auto);
+			grid-template-rows: repeat(2,auto);
+
+		}
+
+		.grid-container ul li{
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 10px;
+			padding: 20px;
+			font-size: 13px;
+			height: 170px;
+			width: 170px;
+			margin-bottom: 20px;
+		}
+
+		#course {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			float: right;
+			width: 100px;
+			height: 100px;
+		}
+
+		ul li b {
+			font-size: 14px;
+		}
+
+		ul li p {
+			clear: right;
+		}
+
+	</style>
 </head>
 <body>
-	<div class="nav-bar">
-		<table width="100%" height="50px" bgcolor="#00a090">
-			<tr>
-				<td width="3%"></td>
-				<td width="17%"><img width="80%" src="icon/logo.png"></td>
-				<td width="50%"><label class="fa fa-bars menu-bar" for="tag-menu"></label></td>
-				<td><form action="" method="get">
-					<input type="text" name="search_text" id="search_text" placeholder="Search"></input>
-					<label class="fa fa-search search_button"></label>
-				</form></td>
-				<td>Hai Hanyhuni!</td>
-				<td><a href="index.html"><i class="fa fa-sign-out-alt logout"></i></a></td>
-			</tr>
-		</table>
-	</div>
+	<header>
+		<!-- <a href="#" id="heading"><img width= "65%" src="icon/logo.png"></a> -->
+		<div class="nav-bar">
+			<ul>
+				<li id="search">
+					<form action="" method="get">
+						<input type="text" name="search_text" id="search_text" placeholder="Search"></input>
+						<label class="fa fa-search search_button"></label>
+					</form>
+					<li>Hai Hanyhuni!</li>
+				</li>
+				<li><a href="index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
+			</ul>
+		</div>
+		<input type="checkbox" id="tag-menu"/>
+		<label class="fa fa-bars menu-bar" for="tag-menu"></label>
+		<div class="side-bar">
+			<nav>
+				<ul>
+					<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 10%;" src="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/redhare/products/698523/shirt-1533535672-2dc0402b2c25778085aeee4efd092527.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJ0cmltIiwgW2ZhbHNlLCBmYWxzZV0sIHt9XSwgWyJyZXNpemUiLCBbXSwgeyJ3aWR0aCI6IDk5Ni4wLCAiYWxsb3dfdXAiOiBmYWxzZSwgImhlaWdodCI6IDk5Ni4wfV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzEyMDAsIDEyMDBdLCB7ImJhY2tncm91bmQiOiAiZmRmYmVmIn1dLCBbInJlc2l6ZSIsIFs4MDBdLCB7fV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzgwMCwgODAwLCAiI2ZmZmZmZiJdLCB7fV0sIFsiZW5jb2RlIiwgWyJqcGciLCA4NV0sIHt9XV19">
+					<br>
+					<p style="display: block; text-align: center;">Student</p>
+					<br>
+					<li><a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;Dashboard</a></li>
+					<li><a href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;Courses</a></li>
+					<li><a href="#"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;Schedule</a></li>
+					<li><a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;Record</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
 	<div class="content">
-		<table border="2" width="100%">
-			<tr bgcolor="#00a090" >
-				<td rowspan="4" width="20%">
-					<ul>
-						<p align="center"><img width="50%" src="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/redhare/products/698523/shirt-1533535672-2dc0402b2c25778085aeee4efd092527.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJ0cmltIiwgW2ZhbHNlLCBmYWxzZV0sIHt9XSwgWyJyZXNpemUiLCBbXSwgeyJ3aWR0aCI6IDk5Ni4wLCAiYWxsb3dfdXAiOiBmYWxzZSwgImhlaWdodCI6IDk5Ni4wfV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzEyMDAsIDEyMDBdLCB7ImJhY2tncm91bmQiOiAiZmRmYmVmIn1dLCBbInJlc2l6ZSIsIFs4MDBdLCB7fV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzgwMCwgODAwLCAiI2ZmZmZmZiJdLCB7fV0sIFsiZW5jb2RlIiwgWyJqcGciLCA4NV0sIHt9XV19"></p>
-						<br>
-						<p align="center">Student</p>
-						<br>
-						<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;Dashboard</a><br><br><br>
-						<a href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;Courses</a><br><br><br>
-						<a href="#"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;Schedule</a><br><br><br>
-						<a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;Record</a><br><br><br>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td width="20%">
+		<div class="grid-container">
+			<ul>
+				<li>
 					<b>Mathematics</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/mtk.png"><br>
 					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
+				</li>
+				<li>
 					<b>Physics</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/fisika.png"><br>
 					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
+				</li>
+				<li>
 					<b>English</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/inggris.png"><br>
 					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
+				</li>
+				<li>
 					<b>Chemistry</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/kimia.png"><br>
 					<p>class with mrs. Lala</p>
-				</td>
-			</tr>
-			<tr>
-				<td width="20%">
+				</li>
+				<li>
 					<b>Biology</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/biologi.png"><br>
 					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
-					<b>Physics</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/fisika.png"><br>
-					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
-					<b>English</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/inggris.png"><br>
-					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
-					<b>Chemistry</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/kimia.png"><br>
-					<p>class with mrs. Lala</p>
-				</td>
-
-			</tr>
-			<tr>
-				<td width="20%">
-					<b>Mathematics</b><br><br>
+				</li>
+				<li>
+					<!-- <b>Mathematics</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/mtk.png"><br>
-					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
-					<b>Physics</b><br><br>
+					<p>class with mrs. Lala</p> -->
+				</li>
+				<li>
+					<!-- <b>Mathematics</b><br><br>
 					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/fisika.png"><br>
-					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
-					<b>English</b><br><br>
+					<img id="course" src="icon/mtk.png"><br>
+					<p>class with mrs. Lala</p> -->
+				</li>
+				<li>
+					<!-- <b>Mathematics</b><br><br>
 					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/inggris.png"><br>
-					<p>class with mrs. Lala</p>
-				</td>
-				<td width="20%">
-					<b>Chemistry</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/kimia.png"><br>
-					<p>class with mrs. Lala</p>
-				</td>
-
-
-			</tr>	
-		</table>
+					<img id="course" src="icon/mtk.png"><br>
+					<p>class with mrs. Lala</p> -->
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
