@@ -198,32 +198,6 @@
 			color:#FFF;
 		}
 
-		.table1 {
-    font-family: sans-serif;
-    color: #444;
-    border-collapse: collapse;
-    width: 80%;
-    border: 1px solid #f2f5f7;
-}
- 
-.table1 tr th{
-    background: #35A9DB;
-    color: #fff;
-    font-weight: normal;
-}
- 
-.table1, th, td {
-    padding: 6px 60px;
-    text-align: center;
-}
- 
-.table1 tr:hover {
-    background-color: #f5f5f5;
-}
- 
-.table1 tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
 
 		.side-bar ul li a:hover{
 			/*background-color:rgba(0, 0, 0, 0.1);*/
@@ -248,45 +222,34 @@
 		}
 
 		.content{
-			padding: 100px 0 0 270px;
+			padding: 100px 40px 0 270px;
 		}
 
-		.grid-container ul{
-			margin: 0;
-			padding: 0;
-			list-style-type:none;
-			display: grid;
-			grid-column-gap:20px; 
-			grid-row-gap:5px;
-			grid-template-columns: repeat(4, auto);
-			grid-template-rows: repeat(2,auto);
-
+		.table1 {
+			font-family: sans-serif;
+			color: #444;
+			border-collapse: collapse;
+			width: 100%;
+			border: 1px solid #f2f5f7;
 		}
 
-		.grid-container ul li{
-			background-color: rgba(255, 255, 255, 0.8);
-			border-radius: 10px;
-			padding: 20px;
-			font-size: 13px;
-			height: 170px;
-			width: 170px;
-			margin-bottom: 20px;
+		.table1 tr {
+			background: #d6ecec;
+			color: black;
+			font-weight: normal;
 		}
 
-		#course {
-			margin-top: 5px;
-			margin-bottom: 5px;
-			float: right;
-			width: 100px;
-			height: 100px;
+		.table1, th, td {
+			padding: 8px 20px;
+			text-align: center;
 		}
 
-		ul li b {
-			font-size: 14px;
-		}
+		/*.table1 tr:hover {
+			background-color: #f5f5f5;
+		}*/
 
-		ul li p {
-			clear: right;
+		.table1 tr:nth-child(even) {
+			background-color: #f2f2f2;
 		}
 
 	</style>
@@ -325,43 +288,72 @@
 	</header>
 
 	<div class="content">
-		<div class="grid-container">
-	<table class="table1">
-    <tr>
-        <td> <input type="checkbox" name="hobi2" value="HTML" checked="checked"/> </td>
-        <td> Ruang </td>
-        <td> Mata pelajaran </td>
-        <td> Hari </td>
-        <td> Jam </td>
-        <td> Tentor </td>
-    </tr>
-    <tr>
-        <td> <input type="checkbox" name="hobi2" value="HTML" checked="checked"/> </td>
-        <td> Ruang </td>
-        <td> Mata pelajaran </td>
-        <td> Hari </td>
-        <td> Jam </td>
-        <td> Tentor </td>
-    </tr>
-    <tr>
-       <td> <input type="checkbox" name="hobi2" value="HTML" checked="checked"/> </td>
-        <td> Ruang </td>
-        <td> Mata pelajaran </td>
-        <td> Hari </td>
-        <td> Jam </td>
-        <td> Tentor </td>
-        
-    </tr>
-    <tr>
-        <td> <input type="checkbox" name="hobi2" value="HTML" checked="checked"/> </td>
-        <td> Ruang </td>
-        <td> Mata pelajaran </td>
-        <td> Hari </td>
-        <td> Jam </td>
-        <td> Tentor </td>
-    </tr>
-</table>
-	</div>
-	</div>
-</body>
-</html>
+		<table class="table1">
+				<!-- <tr>
+					<td> <input type="checkbox" name="hobi2" value="HTML" checked="checked"/> </td>
+					<td> Ruang </td>
+					<td> Mata pelajaran </td>
+					<td> Hari </td>
+					<td> Jam </td>
+					<td> Tentor </td>
+				</tr> -->
+				<tr>
+					<th> No </th>
+					<th> Day </th>
+					<th> Time </th>
+					<th> Courses </th>
+					<th> Teacher </th>
+					<th> Class </th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Monday</td>
+					<td>19.00 - 20.00</td>
+					<td>English</td>
+					<td>Mr. Parno</td>
+					<td>Room D1, 2nd floor</td>
+				</tr>	
+				<tr>
+					<td>1</td>
+					<td>Monday</td>
+					<td>19.00 - 20.00</td>
+					<td>English</td>
+					<td>Mr. Parno</td>
+					<td>Room D1, 2nd floor</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Monday</td>
+					<td>19.00 - 20.00</td>
+					<td>English</td>
+					<td>Mr. Parno</td>
+					<td>Room D1, 2nd floor</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Monday</td>
+					<td>19.00 - 20.00</td>
+					<td>English</td>
+					<td>Mr. Parno</td>
+					<td>Room D1, 2nd floor</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Monday</td>
+					<td>19.00 - 20.00</td>
+					<td>English</td>
+					<td>Mr. Parno</td>
+					<td>Room D1, 2nd floor</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Monday</td>
+					<td>19.00 - 20.00</td>
+					<td>English</td>
+					<td>Mr. Parno</td>
+					<td>Room D1, 2nd floor</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	</html>
