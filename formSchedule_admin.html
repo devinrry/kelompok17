@@ -48,6 +48,68 @@
 			clear: right;
 		}
 
+		* {
+			box-sizing: border-box;
+		}
+
+		input[type=text], select, textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			resize: vertical;
+		}
+
+		label {
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+
+		.col-25 {
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+		}
+
+		.col-75 {
+			float: left;
+			width: 75%;
+			margin-top: 6px;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		@media screen and (max-width: 600px) {
+			.col-25, .col-75, input[type=submit] {
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+
 	</style>
 </head>
 <body>
@@ -82,60 +144,128 @@
 			</nav>
 		</div>
 	</header>
-<div class="content">
-<h1>Enter New Schedule</h1>
-    <table lass="table1">
-    	<tr>
-    	    <td valign="top">Day</td>
-    	    <td>
-    	        <select>
-    	    <option>Monday</option>
-		    <option>Tuesday</option>
-		    <option>Wednesday</option>
-		    <option>Thursday</option>
-		    <option>Friday</option>
-		    <option>Saturday</option>
-		    </select>
-    	    </td>
-    	</tr>
-    	<tr>
-    	    <td valign="top">Time</td>
-    	    <td><input type="text" name="username" placeholder="Masukan username"></td>
-    	</tr>
-    	<tr>
-               <td valign="top">Courses</td>
-               <td>
-    	        <select>
-		    <option>English</option>
-		    <option>Physics</option>
-		    <option>Mathematics</option>
-		    <option>Chemistry</option>
-		    <option>Biology</option>
-		    </select>
-    	    </td>
-    	</tr>
-    	<tr>
-    	    <td valign="top">Teacher</td>
-    	    <td><input type="email" name="email" placeholder="Masukan email"></td>
-    	</tr>
-    	<tr>
-    	    <td valign="top">Class</td>
-    	    <td>
-    	        <select>
-    	            <option>Banda Aceh</option>
-		    <option>Room D1, 2nd floor</option>
-		    <option>Room D1, 2nd floor</option>
-		    <option>Room D1, 2nd floor</option>
-		    <option>Room D1, 2nd floor</option>
-		    <option>Room D1, 2nd floor</option>
-		    <option>Room D1, 2nd floor</option>
-		    </select>
-    	    </td>
-    	</tr>
-    	<tr>
-    	    <td colspan="2"><input type="submit" value="Simpan"></td>
-    	</tr>
-    </table>
-    </div>	
+	<div class="content">
+		<div class="container">
+			<h1>Enter New Schedule</h1>
+			<form action="#">
+				<div class="row">
+					<div class="col-25">
+						<label for="day">Day</label>
+					</div>
+					<div class="col-75">
+						<select id="day" name="day">
+							<option>Monday</option>
+							<option>Tuesday</option>
+							<option>Wednesday</option>
+							<option>Thursday</option>
+							<option>Friday</option>
+							<option>Saturday</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="time">Time</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="time" name="time">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="courses">Courses</label>
+					</div>
+					<div class="col-75">
+						<select id="courses" name="courses">
+							<option>English</option>
+							<option>Physics</option>
+							<option>Mathematics</option>
+							<option>Chemistry</option>
+							<option>Biology</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="teacher">Teacher</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="teacher" name="teacher">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="class">Class</label>
+					</div>
+					<div class="col-75">
+						<select id="class" name="class">
+							<option>Room D1, 2nd floor</option>
+							<option>Room D1, 2nd floor</option>
+							<option>Room D1, 2nd floor</option>
+							<option>Room D1, 2nd floor</option>
+							<option>Room D1, 2nd floor</option>
+							<option>Room D1, 2nd floor</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<input type="submit" value="Simpan">
+				</div>
+			</form>
+		</div>
+		
+		<!-- <table lass="table1">
+			<tr>
+				<td valign="top">Day</td>
+				<td>
+					<select>
+						<option>Monday</option>
+						<option>Tuesday</option>
+						<option>Wednesday</option>
+						<option>Thursday</option>
+						<option>Friday</option>
+						<option>Saturday</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">Time</td>
+				<td><input type="text" name="username" placeholder="Masukan username"></td>
+			</tr>
+			<tr>
+				<td valign="top">Courses</td>
+				<td>
+					<select>
+						<option>English</option>
+						<option>Physics</option>
+						<option>Mathematics</option>
+						<option>Chemistry</option>
+						<option>Biology</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">Teacher</td>
+				<td><input type="email" name="email" placeholder="Masukan email"></td>
+			</tr>
+			<tr>
+				<td valign="top">Class</td>
+				<td>
+					<select>
+						<option>Banda Aceh</option>
+						<option>Room D1, 2nd floor</option>
+						<option>Room D1, 2nd floor</option>
+						<option>Room D1, 2nd floor</option>
+						<option>Room D1, 2nd floor</option>
+						<option>Room D1, 2nd floor</option>
+						<option>Room D1, 2nd floor</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Simpan"></td>
+			</tr>
+		</table> -->
+	</div>	
 </body>
 </html>
