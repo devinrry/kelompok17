@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<title>E-SMARTBIMBEL</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+ 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<style>
-		.content{
+/*		.content{
 			padding: 100px 0 0 270px;
-		}
+		}*/
 
 		.grid-container ul{
 			margin: 0;
@@ -51,40 +52,44 @@
 	</style>
 </head>
 <body>
-	<header>
-		<!-- <a href="#" id="heading"><img width= "65%" src="icon/logo.png"></a> -->
-		<div class="nav-bar">
-			<ul>
-				<li id="search">
-					<form action="" method="get">
-						<input type="text" name="search_text" id="search_text" placeholder="Search"></input>
-						<label class="fa fa-search search_button"></label>
-					</form>
-					<li>Hai Hanyhuni!</li>
-				</li>
-				<li><a href="index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
-			</ul>
+	<div class="container">
+		<div class="sidebar">
+			<div class="logo">
+				<img width="100%" src="icon/logo.png">
+				<!-- <a class="active" href="#home">Judul</a> -->
+			</div>
+			<div class="sidebar-menu">
+				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/redhare/products/698523/shirt-1533535672-2dc0402b2c25778085aeee4efd092527.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJ0cmltIiwgW2ZhbHNlLCBmYWxzZV0sIHt9XSwgWyJyZXNpemUiLCBbXSwgeyJ3aWR0aCI6IDk5Ni4wLCAiYWxsb3dfdXAiOiBmYWxzZSwgImhlaWdodCI6IDk5Ni4wfV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzEyMDAsIDEyMDBdLCB7ImJhY2tncm91bmQiOiAiZmRmYmVmIn1dLCBbInJlc2l6ZSIsIFs4MDBdLCB7fV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzgwMCwgODAwLCAiI2ZmZmZmZiJdLCB7fV0sIFsiZW5jb2RlIiwgWyJqcGciLCA4NV0sIHt9XV19">
+				<p style="display: block; text-align: center;">Student</p>
+				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
+				<li><a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
+				<li><a class="active" href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
+				<li><a href="schedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
+				<li><a href="record.html"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;Record</a></li>
+			</div>
 		</div>
-		<input type="checkbox" id="tag-menu"/>
-		<label class="fa fa-bars menu-bar" for="tag-menu"></label>
-		<div class="side-bar">
-			<nav>
-				<ul>
-					<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 10%;" src="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/redhare/products/698523/shirt-1533535672-2dc0402b2c25778085aeee4efd092527.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJ0cmltIiwgW2ZhbHNlLCBmYWxzZV0sIHt9XSwgWyJyZXNpemUiLCBbXSwgeyJ3aWR0aCI6IDk5Ni4wLCAiYWxsb3dfdXAiOiBmYWxzZSwgImhlaWdodCI6IDk5Ni4wfV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzEyMDAsIDEyMDBdLCB7ImJhY2tncm91bmQiOiAiZmRmYmVmIn1dLCBbInJlc2l6ZSIsIFs4MDBdLCB7fV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzgwMCwgODAwLCAiI2ZmZmZmZiJdLCB7fV0sIFsiZW5jb2RlIiwgWyJqcGciLCA4NV0sIHt9XV19">
-					<br>
-					<p style="display: block; text-align: center;">Student</p>
-					<br>
-					<li><a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Dashboard</a></li>
-					<li><a href="course.html"><i class="fa fa-book"></i>&nbsp;&nbsp;Courses</a></li>
-					<li><a href="schedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;Schedule</a></li>
-					<li><a href="record.html"><i class="fa fa-history"></i>&nbsp;&nbsp;Record</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<div class="content">
-		<div class="grid-container">
+		<div class="content">
+			<div class="navbar">
+				<div class="btn-toggle">
+					<i onclick="toggle()" class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="navbar-menu">
+					<li><a href="#"><i class="fa fa-sign-out-alt logout"></i></a></li>
+					<li><a href="#">Hai Hanyhuni!</a></li>
+					<li><a href="#"><i class="fa fa-bell"></i></a></li>
+					<li>
+						<form class="search" action="#" method="get">
+							<input type="text" name="search-text" class="search-text" placeholder="Search ..."></input>
+							<span>
+								<button type="submit" name="search" class="search-btn"><i class="fa fa-search"></i>
+								</button>
+							</span>
+						</form>
+					</li>
+				</div>
+			</div>
+			<div class="main">
+				<div class="grid-container">
 			<ul>
 				<li>
 					<b>Mathematics</b><br><br>
@@ -117,40 +122,22 @@
 					<p>class with mrs. Lala</p>
 				</li>
 				<li>
-					<b>Indonesian</b><br><br>
+					<!-- <b>Mathematics</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
+					<p>class with mrs. Lala</p> -->
 				</li>
 				<li>
-					<b>History</b><br><br>
+					<!-- <b>Mathematics</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
+					<p>class with mrs. Lala</p> -->
 				</li>
 				<li>
-					<b>Economic</b><br><br>
+					<!-- <b>Mathematics</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
-				</li>
-				<li>
-					<b>Geographic</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
-				</li>
-				<li>
-					<b>Sosiology</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
-				</li>
-				<li>
-					<b>Citizenship</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
+					<p>class with mrs. Lala</p> -->
 				</li>
 				<li></li>
 				<li></li>
@@ -158,6 +145,22 @@
 				<li></li>
 			</ul>
 		</div>
+			</div>
+		</div>
 	</div>
 </body>
+<script>
+	function toggle(){
+		document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
+		document.getElementsByClassName('content')[0].classList.toggle('collapsed');
+	}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	$(window).resize(function() {
+		if ($(".content").width() > 1200) {
+			$(".search-text").css("width", "900px");
+		} 
+	});
+</script>
+
 </html>
