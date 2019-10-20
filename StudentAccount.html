@@ -18,7 +18,8 @@
 
 		.form {
 			border-radius: 5px;
-			padding: 0px 20px 20px 20px;
+			background-color: ;
+			padding: 20px;
 			font-family: 'Rubik', sans-serif;
 		}
 
@@ -51,7 +52,6 @@
 		.form input[type=submit]:hover {
 			background-color: #45a049;
 		}
-
 
 		.col-25 {
 			float: left;
@@ -91,11 +91,10 @@
 				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="icon/icebear.jpg">
 				<p style="display: block; text-align: center;">Admin</p>
 				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
-				<li><a class="active" href="admin_Dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
-				<li><a href="admin_ListStudent.html"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;Student</a></li>
-				<li><a href="admin_ListTentor.html"><i class="fa fa-user-graduate"></i>&nbsp;&nbsp;&nbsp;Teacher</a></li>
-				<li><a href="admin_ListSchedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
-				<li><a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;Record</a></li>
+				<li><a class="active" href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
+				<li><a href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
+				<li><a href="schedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
+				<li><a href="record.html"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;Record</a></li>
 			</div>
 		</div>
 		<div class="content">
@@ -105,7 +104,7 @@
 				</div>
 				<div class="navbar-menu">
 					<li><a href="index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
-					<li><a href="#">Hai Devi!</a></li>
+					<li><a href="StudentAccount.html">Hai Hanyhuni!</a></li>
 					<li><a href="#"><i class="fa fa-bell"></i></a></li>
 					<li>
 						<form class="search" action="#" method="get">
@@ -119,7 +118,70 @@
 				</div>
 			</div>
 			<div class="main">
-				
+				<div class="form">
+					<h1>My Account</h1>
+					<form action="dashboard.html">
+						<div class="row">
+							<div class="col-25">
+								<label for="studentname">Name</label>
+							</div>
+							<div class="col-75">
+								<label for="studentname">: Isyatun Haniyah</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="gender">Gender</label>
+							</div>
+							<div class="col-75">
+								<label for="gender">: Female</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="placedate">Place, Date of Birth</label>
+							</div>
+							<div class="col-25">
+								<label for="placedate">: Gresik 14 Juli</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="address">Address</label>
+							</div>
+							<div class="col-75">
+								<label for="address">: Jl. Ahmad Yani gang 8 gresik</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="email">E-Mail</label>
+							</div>
+							<div class="col-75">
+								<label for="email">: ihanihuni@gmail.com</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="grade">Grade of School</label>
+							</div>
+							<div class="col-75">
+								<label for="grade">: 3rd of Senior High School</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="school">School name</label>
+							</div>
+							<div class="col-75">
+								<label for="school">SMA 1</label>
+							</div>
+						</div>
+						<div class="row">
+							<input type="submit" value="Back">
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -137,5 +199,4 @@
 		} 
 	});
 </script>
-
 </html>
