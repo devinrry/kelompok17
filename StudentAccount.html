@@ -1,84 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>E-SMARTBIMBEL</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<style>
-		/*.content{
-			padding: 100px 0 0 270px;
-			font-family: 'Rubik', sans-serif;
-		}*/
-
-		* {
-			box-sizing: border-box;
-		}
-
-		.form {
-			border-radius: 5px;
-			background-color: ;
-			padding: 20px;
-			font-family: 'Rubik', sans-serif;
-		}
-
-		.form input[type=text], select, textarea {
-			width: 100%;
-			padding: 12px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			resize: vertical;
-			font-family: 'Rubik', sans-serif;
-		}
-
-		.form label {
-			padding: 12px 12px 12px 0;
-			display: inline-block;
-		}
-
-		.form input[type=submit] {
-			background-color: #4CAF50;
-			color: white;
-			margin-top: 20px;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			float: right;
-			font-family: 'Rubik', sans-serif;
-		}
-
-		.form input[type=submit]:hover {
-			background-color: #45a049;
-		}
-
-		.col-25 {
-			float: left;
-			width: 25%;
-			margin-top: 6px;
-		}
-
-		.col-75 {
-			float: left;
-			width: 75%;
-			margin-top: 6px;
-		}
-
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		@media screen and (max-width: 600px) {
-			.col-25, .col-75, input[type=submit] {
-				width: 100%;
-				margin-top: 0;
-			}
-		}
-
-	</style>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>E-SMARTBIMBEL</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+ 	<link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
 <body>
 	<div class="container">
@@ -89,7 +16,7 @@
 			</div>
 			<div class="sidebar-menu">
 				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="icon/icebear.jpg">
-				<p style="display: block; text-align: center;">Admin</p>
+				<p style="display: block; text-align: center;">Student</p>
 				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
 				<li><a class="active" href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
 				<li><a href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
@@ -118,70 +45,41 @@
 				</div>
 			</div>
 			<div class="main">
-				<div class="form">
-					<h1>My Account</h1>
-					<form action="dashboard.html">
-						<div class="row">
-							<div class="col-25">
-								<label for="studentname">Name</label>
-							</div>
-							<div class="col-75">
-								<label for="studentname">: Isyatun Haniyah</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="gender">Gender</label>
-							</div>
-							<div class="col-75">
-								<label for="gender">: Female</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="placedate">Place, Date of Birth</label>
-							</div>
-							<div class="col-25">
-								<label for="placedate">: Gresik 14 Juli</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="address">Address</label>
-							</div>
-							<div class="col-75">
-								<label for="address">: Jl. Ahmad Yani gang 8 gresik</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="email">E-Mail</label>
-							</div>
-							<div class="col-75">
-								<label for="email">: ihanihuni@gmail.com</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="grade">Grade of School</label>
-							</div>
-							<div class="col-75">
-								<label for="grade">: 3rd of Senior High School</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="school">School name</label>
-							</div>
-							<div class="col-75">
-								<label for="school">SMA 1</label>
-							</div>
-						</div>
-						<div class="row">
-							<input type="submit" value="Back">
-						</div>
-					</form>
-				</div>
+				<h1>My Account</h1>
+ 				<table width="70%">
+ 					<tr>
+ 						<td>Name</td>
+ 						<td>: Isyatun Haniyah</td>
+ 					</tr>
+ 					<tr>
+ 						<td>NIK</td>
+ 						<td>: 325407800100</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Gender</td>
+ 						<td>: Female</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Place, Date of Birth</td>
+ 						<td>: Gresik, 14 Juli</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Address</td>
+ 						<td>: Jl. Ahmad Yani gang 8 gresik</td>
+ 					</tr>
+ 					<tr>
+ 						<td>E-Mail</td>
+ 						<td>: ihanihuni@gmail.com</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Subject</td>
+ 						<td>: Mathematics, Physics</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Grade of teach</td>
+ 						<td>: 2rd of junior high</td>
+ 					</tr>
+ 				</table>
 			</div>
 		</div>
 	</div>
@@ -200,3 +98,4 @@
 	});
 </script>
 </html>
+

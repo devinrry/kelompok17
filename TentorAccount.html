@@ -1,211 +1,105 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>E-SMARTBIMBEL</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<style>
-		/*.content{
-			padding: 100px 0 0 270px;
-			font-family: 'Rubik', sans-serif;
-		}*/
-
-		* {
-			box-sizing: border-box;
-		}
-
-		.form {
-			border-radius: 5px;
-			padding: 0px 20px 20px 20px;
-			font-family: 'Rubik', sans-serif;
-		}
-
-		.form input[type=text], select, textarea {
-			width: 100%;
-			padding: 12px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			resize: vertical;
-			font-family: 'Rubik', sans-serif;
-		}
-
-		.form label {
-			padding: 12px 12px 12px 0;
-			display: inline-block;
-		}
-
-		.form input[type=submit] {
-			background-color: #4CAF50;
-			color: white;
-			margin-top: 20px;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			float: right;
-			font-family: 'Rubik', sans-serif;
-		}
-
-		.form input[type=submit]:hover {
-			background-color: #45a049;
-		}
-
-		.col-25 {
-			float: left;
-			width: 25%;
-			margin-top: 6px;
-		}
-
-		.col-75 {
-			float: left;
-			width: 75%;
-			margin-top: 6px;
-		}
-
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		@media screen and (max-width: 600px) {
-			.col-25, .col-75, input[type=submit] {
-				width: 100%;
-				margin-top: 0;
-			}
-		}
-
-	</style>
-</head>
-<body>
-	<div class="container">
-		<div class="sidebar">
-			<div class="logo">
-				<img width="100%" src="icon/logo.png">
-				<!-- <a class="active" href="#home">Judul</a> -->
-			</div>
-			<div class="sidebar-menu">
-				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="icon/icebear.jpg">
-				<p style="display: block; text-align: center;">Admin</p>
-				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
-				<li><a class="active" href="dashboard_tentor.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
-				<li><a href="courses_tentor.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
-				<li><a href="schedule_tentor.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
-				<li><a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;Record</a></li>
-			</div>
-		</div>
-		<div class="content">
-			<div class="navbar">
-				<div class="btn-toggle">
-					<i onclick="toggle()" class="fa fa-bars" aria-hidden="true"></i>
-				</div>
-				<div class="navbar-menu">
-					<li><a href="index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
-					<li><a href="TentorAccount.html">Hai Lala!</a></li>
-					<li><a href="#"><i class="fa fa-bell"></i></a></li>
-					<li>
-						<form class="search" action="#" method="get">
-							<input type="text" name="search-text" class="search-text" placeholder="Search ..."></input>
-							<span>
-								<button type="submit" name="search" class="search-btn"><i class="fa fa-search"></i>
-								</button>
-							</span>
-						</form>
-					</li>
-				</div>
-			</div>
-			<div class="main">
-				<div class="form">
-					<h1>My Account</h1>
-					<form action="dashboard_tentor.html">
-						<div class="row">
-							<div class="col-25">
-								<label for="teachername">Name</label>
-							</div>
-							<div class="col-75">
-								<label for="teachername">: Isyatun Haniyah</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="nik">NIK</label>
-							</div>
-							<div class="col-75">
-								<label for="nik">: 325407800100</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="gender">Gender</label>
-							</div>
-							<div class="col-75">
-								<label for="gender">: Female</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="placedate">Place, Date of Birth</label>
-							</div>
-							<div class="col-25">
-								<label for="placedate">: Gresik 14 Juli</label>
-							</div>
-							<div class="col-25">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="address">Address</label>
-							</div>
-							<div class="col-75">
-								<label for="address">: Jl. Ahmad Yani gang 8 gresik</label>
-							</div>
-							</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="email">E-Mail</label>
-							</div>
-							<div class="col-75">
-								<label for="email">: ihanihuni@gmail.com</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="subjects">Subject</label>
-							</div>
-							<div class="col-75">
-								<label for="subjects">: Mathematics, Physics</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-25">
-								<label for="GradeT">Grade of teach</label>
-							</div>
-							<div class="col-75">
-								<label for="GradeT">: 2rd of junior high</label>
-							</div>
-						</div>
-						<div class="row">
-							<input type="submit" value="Back">
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-<script>
-	function toggle(){
-		document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
-		document.getElementsByClassName('content')[0].classList.toggle('collapsed');
-	}
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-	$(window).resize(function() {
-		if ($(".content").width() > 1200) {
-			$(".search-text").css("width", "900px");
-		} 
-	});
-</script>
-</html>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>E-SMARTBIMBEL</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+ 	<link rel="stylesheet" type="text/css" href="css/header.css">
+ 	<style>
+ 		tr {
+ 			
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	<div class="container">
+ 		<div class="sidebar">
+ 			<div class="logo">
+ 				<img width="100%" src="icon/logo.png">
+ 				<!-- <a class="active" href="#home">Judul</a> -->
+ 			</div>
+ 			<div class="sidebar-menu">
+ 				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="icon/icebear.jpg">
+ 				<p style="display: block; text-align: center;">Teacher</p>
+ 				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
+ 				<li><a class="active" href="dashboard_tentor.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
+ 				<li><a href="courses_tentor.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
+ 				<li><a href="schedule_tentor.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
+ 				<li><a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;Record</a></li>
+ 			</div>
+ 		</div>
+ 		<div class="content">
+ 			<div class="navbar">
+ 				<div class="btn-toggle">
+ 					<i onclick="toggle()" class="fa fa-bars" aria-hidden="true"></i>
+ 				</div>
+ 				<div class="navbar-menu">
+ 					<li><a href="index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
+ 					<li><a href="TentorAccount.html">Hai Lala!</a></li>
+ 					<li><a href="#"><i class="fa fa-bell"></i></a></li>
+ 					<li>
+ 						<form class="search" action="#" method="get">
+ 							<input type="text" name="search-text" class="search-text" placeholder="Search ..."></input>
+ 							<span>
+ 								<button type="submit" name="search" class="search-btn"><i class="fa fa-search"></i>
+ 								</button>
+ 							</span>
+ 						</form>
+ 					</li>
+ 				</div>
+ 			</div>
+ 			<div class="main">
+ 				<h1>My Account</h1>
+ 				<table width="70%">
+ 					<tr>
+ 						<td>Name</td>
+ 						<td>: Isyatun Haniyah</td>
+ 					</tr>
+ 					<tr>
+ 						<td>NIK</td>
+ 						<td>: 325407800100</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Gender</td>
+ 						<td>: Female</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Place, Date of Birth</td>
+ 						<td>: Gresik, 14 Juli</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Address</td>
+ 						<td>: Jl. Ahmad Yani gang 8 gresik</td>
+ 					</tr>
+ 					<tr>
+ 						<td>E-Mail</td>
+ 						<td>: ihanihuni@gmail.com</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Subject</td>
+ 						<td>: Mathematics, Physics</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Grade of teach</td>
+ 						<td>: 2rd of junior high</td>
+ 					</tr>
+ 				</table>
+ 			</div>
+ 		</div>
+ 	</div>
+ </body>
+ <script>
+ 	function toggle(){
+ 		document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
+ 		document.getElementsByClassName('content')[0].classList.toggle('collapsed');
+ 	}
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+ 	$(window).resize(function() {
+ 		if ($(".content").width() > 1200) {
+ 			$(".search-text").css("width", "900px");
+ 		} 
+ 	});
+ </script>
+ </html>
