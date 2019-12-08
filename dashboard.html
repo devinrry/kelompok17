@@ -6,6 +6,41 @@
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
  	<link rel="stylesheet" type="text/css" href="css/header.css">
+ 		<style>
+		.grid-container ul{
+			margin: 0;
+			padding: 0;
+			list-style-type:none;
+			display: grid;
+			grid-column-gap:0px; 
+			grid-row-gap:0px;
+			grid-template-columns: repeat(4, auto);
+			grid-template-rows: repeat(2,auto);
+			width: 100%;
+
+		}
+
+		.grid-container ul li{
+			background-color: #D8BFD8;
+			border-radius: 10px;
+			padding: 20px;
+			font-size: 13px;
+			height: 150px;
+			width: 800px;
+			margin-bottom: 0px;
+			margin-top: 30px;
+			margin-right: 50px;
+			margin-left : 80px;
+		}
+		ul li b {
+			font-size: 14px;
+			font-style: 
+		}
+
+		ul li p {
+			clear: right;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -45,10 +80,15 @@
 				</div>
 			</div>
 			<div class="main">
-				
-			</div>
-		</div>
-	</div>
+				<div class="grid-container">
+			<ul>
+				<li>
+					<img d="course" src="icon/admin5.png" align="right"> 
+					<h2>Welcome Back Hanyhuni </h2>
+					Let's study with enjoy				
+					
+				</li>
+				</ul>
 </body>
 <script>
 	function toggle(){
