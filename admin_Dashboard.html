@@ -7,8 +7,39 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<style>
-	
+		.grid-container ul{
+			margin: 0;
+			padding: 0;
+			list-style-type:none;
+			display: grid;
+			grid-column-gap:0px; 
+			grid-row-gap:0px;
+			grid-template-columns: repeat(4, auto);
+			grid-template-rows: repeat(2,auto);
+			width: 100%;
 
+		}
+
+		.grid-container ul li{
+			background-color: #D8BFD8;
+			border-radius: 10px;
+			padding: 20px;
+			font-size: 13px;
+			height: 150px;
+			width: 800px;
+			margin-bottom: 0px;
+			margin-top: 30px;
+			margin-right: 50px;
+			margin-left : 80px;
+		}
+		ul li b {
+			font-size: 14px;
+			font-style: 
+		}
+
+		ul li p {
+			clear: right;
+		}
 	</style>
 </head>
 <body>
@@ -21,7 +52,7 @@
 			<div class="sidebar-menu">
 				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="icon/icebear.jpg">
 				<p style="display: block; text-align: center;">Admin</p>
-				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
+				<li class="header" style="padding: 20px 20px 10px 25px; font-size:16px">MAIN MENU</li>
 				<li><a class="active" href="admin_Dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
 				<li><a href="admin_ListStudent.html"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;Student</a></li>
 				<li><a href="admin_ListTentor.html"><i class="fa fa-user-graduate"></i>&nbsp;&nbsp;&nbsp;Teacher</a></li>
@@ -36,7 +67,7 @@
 				</a>
 				<div class="navbar-menu">
 					<li><a href="index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
-					<li><a href="#">Hai Devi!</a></li>
+					<li><a href="#">Hai admin!</a></li>
 					<li><a href="#"><i class="fa fa-bell"></i></a></li>
 					<li>
 						<form class="search" action="#" method="get">
@@ -50,10 +81,15 @@
 				</div>
 			</div>
 			<div class="main">
+				<div class="grid-container">
+			<ul>
+				<li>
+					<img d="course" src="icon/admin5.png" align="right"> 
+					<h2>Welcome Back Admin </h2>
+					Let's work with enjoy				
+					
+				</li>
 				
-			</div>
-		</div>
-	</div>
 </body>
 <script>
 	function toggle() {
