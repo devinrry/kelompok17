@@ -6,30 +6,40 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 	<div class="navbar" id="navbar">
 		<a class="logo" href="#"><img width="220px" src="../assets/icon/logo.png"></a>
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">News</a>
-				<!-- <ul>
-					<li><a href="#">aaa</a></li>
-					<li><a href="#">bbb</a></li>
-				</ul> -->
-			</li>
-			<li><a href="login.html">Login</a></li>
+			<li><a  onclick="document.getElementById('id01').style.display='block'" >Login</a></li>
 			<li>
 				<a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
 			</li>
 		</ul>
+
+		<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>You have two options to close this modal:</p>
+        <p>Click on the "x" or click anywhere outside of the modal!</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+
 	</div>
 	<div id="sidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<li><a href="index.html">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">News</a></li>
 		<li><a href="login.html">Login</a></li>
 	</div>
 	<div class="content">		
@@ -60,6 +70,15 @@
 	function closeNav() {
 		document.getElementById("sidenav").style.width = "0";
 	}
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+ 	if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
 
 </html>
