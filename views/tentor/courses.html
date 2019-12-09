@@ -159,21 +159,35 @@
 							<p>class with 2rd senior high school, C class</p>
 						</a>
 						</li>
+							</ul>
+
+					<ul>
 						<li></li>
 						<li></li>
 						<li></li>
 						<li></li>
 					</ul>
 				</div>
+				<button class="btn1">Hide</button>
+<button class="btn2">Show</button>
 			</div>
-		</div>
-	</div>
+		
 </body>
 <script>
 	function toggle(){
 		document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
 		document.getElementsByClassName('content')[0].classList.toggle('collapsed');
 	}
+
+	$(document).ready(function(){
+  		$(".btn1").click(function(){
+    		$("p").hide(1000);
+  	});
+  	$(".btn2").click(function(){
+    	$("p").show(1000);
+  	});
+});
+
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 	$(window).resize(function() {
