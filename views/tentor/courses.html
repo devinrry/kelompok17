@@ -53,6 +53,26 @@
 			background-color: #1FDBC3;
 		}
 
+		.btn1 {
+			background-color: #00a090;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+
+			font-family: 'Rubik', sans-serif;
+		}
+
+		.btn2 {
+			background-color: #00a090;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-family: 'Rubik', sans-serif;
+		}
 	</style>
 </head>
 <body>
@@ -92,6 +112,8 @@
 					</li>
 				</div>
 			</div>
+				<button class="btn1" align="right">Hide</button>
+				<button class="btn2" align="right">Show</button>
 			<div class="main">
 				<div class="grid-container">
 					<ul>
@@ -160,16 +182,15 @@
 						</a>
 						</li>
 							</ul>
-
+					<div class=coba>
 					<ul>
 						<li></li>
 						<li></li>
 						<li></li>
 						<li></li>
 					</ul>
+					</div>
 				</div>
-				<button class="btn1">Hide</button>
-<button class="btn2">Show</button>
 			</div>
 		
 </body>
@@ -179,14 +200,7 @@
 		document.getElementsByClassName('content')[0].classList.toggle('collapsed');
 	}
 
-	$(document).ready(function(){
-  		$(".btn1").click(function(){
-    		$("p").hide(1000);
-  	});
-  	$(".btn2").click(function(){
-    	$("p").show(1000);
-  	});
-});
+	
 
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
@@ -196,5 +210,14 @@
 		} 
 	});
 </script>
-
+<script>
+	$(document).ready(function(){
+  		$(".btn1").click(function(){
+    		$(".coba").hide(1000);
+  	});
+  	$(".btn2").click(function(){
+    	$(".coba").show(1000);
+  	});
+});
+</script>
 </html>
