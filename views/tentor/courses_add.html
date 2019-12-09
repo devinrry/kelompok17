@@ -7,71 +7,46 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
 	<style>
-	.border-thin-blue {
-    border: 3px;
-    border-color: maroon;
-    border-style: groove;
-    border-radius: 5px;
-}
+	.grid-container ul{
+			margin: 0;
+			padding: 0;
+			list-style-type:none;
+			display: grid;
+			grid-column-gap:10px; 
+			grid-row-gap:0px;
+			grid-template-columns: repeat(4, auto);
+			grid-template-rows: repeat(2,auto);
 
-.bd-bt h1, .bd-bt h2, .bd-bt h3, .bd-bt h4 {
-    border-bottom: 5px solid lightgray;
-}
+		}
 
-.bd-bt-t h1, .bd-bt-t h2, .bd-bt-t h3, .bd-bt-t h4 {
-    border-bottom: thin solid skyblue;
-}
+		.grid-container ul li{
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 10px;
+			padding: 20px;
+			font-size: 13px;
+			height: 190px;
+			width: 170px;
+			margin-bottom: 20px;
+		}
 
-.bd-none {
-    border-style: none !important;
-}
 
-.f-left {
-    float: left;
-}
+		.menu ul {
+   		list-style-type: none;
+   	 	margin: 0;
+    	padding: 0;
+		}
 
-.pd-t-0 {
-    padding-top: 0;
-}
+		.menu li {
+   		padding: 8px;
+    	margin-bottom: 7px;
+    	background-color: #33b5e5;
+    	color: #ffffff;
+    	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		}
 
-.pd-t-16 {
-    padding-top: 16px;
-}
-
-.pd-l-16 {
-    padding-left: 16px;
-}
-
-.hidden {
-    display: none !important;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 40px;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-    background-color: #0099cc;
-}
+		.menu li:hover {
+    	background-color: #0099cc;
+		}
 	</style>
 </head>
 <body>
@@ -113,53 +88,7 @@
 			</div>
 			<div class="main">
 				<h1>Mathematics</h1>
-				<div class="content col-8 col-s-12">
-                        <div class="border-thin-blue col-12 col-s-12">
-                            <div class="content bd-bt">
-                                <h2>Pertemuan 1</h2>
-                                <div class="col-12">
-                                    <a class="f-left t-center pd-t-16"><img src="../assets/img/powerpoint.png" width="24" height="24" alt="powerpoint"/></a>
-                                    <h3 class="pd-l-16 bd-none f-left">Integral</h3>
-                                </div>
-                                <h2>Pertemuan 2</h2>
-                                <div class="col-12">
-                                    <a class="f-left t-center pd-t-16"><img src="../assets/img/powerpoint.png" width="24" height="24" alt="powerpoint"/></a>
-                                    <h3 class="pd-l-16 bd-none f-left">Geometry</h3>
-                                </div>
-                                <h2>Pertemuan 3</h2>
-                                <div class="col-12">
-                                    <a class="f-left t-center pd-t-16"><img src="../assets/img/powerpoint.png" width="24" height="24" alt="powerpoint"/></a>
-                                    <h3 class="pd-l-16 bd-none f-left">Trigonometry</h3>
-                                </div>
-                                <h2>Pertemuan 4</h2>
-                                <h2>Pertemuan 5</h2>
-                                <h2>Pertemuan 6</h2>
-                                <h2>Pertemuan 7</h2>
-                                <h2>Pertemuan 8</h2>
-                                <h2>Pertemuan 9</h2>
-                                <h2>Pertemuan 10</h2>
-                                <h2>Pertemuan 11</h2>
-                                <h2>Pertemuan 12</h2>
-                                <h2>Pertemuan 13</h2>
-                                <h2>Pertemuan 14</h2>
-                                <h2>Pertemuan 15</h2>
-                                <h2>Pertemuan 16</h2>
-                                <h2>Pertemuan 17</h2>
-                                <h2>Pertemuan 18</h2>
-                                <h2>Pertemuan 19</h2>
-                                <h2>Pertemuan 20</h2>
-                                <h2>Pertemuan 21</h2>
-                                <h2>Pertemuan 22</h2>
-                                <h2>Pertemuan 23</h2>
-                                <h2>Pertemuan 24</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
+				
             </div>
 </body>
 <script>
