@@ -6,42 +6,125 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 100;
+			padding-top: 100px;
+			left: 0;
+			top: 0;
+			width: 100%; 
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(0,0,0); 
+			background-color: rgba(0,0,0,0.4);
+		}
+
+		.modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 10px 20px 30px;
+			border: 1px solid #888;
+			width: 300px;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+			-webkit-animation-name: animatetop;
+			-webkit-animation-duration: 0.4s;
+			animation-name: animatetop;
+			animation-duration: 0.4s
+		}
+
+		@-webkit-keyframes animatetop {
+			from {top:-300px; opacity:0} 
+			to {top:0; opacity:1}
+		}
+
+		@keyframes animatetop {
+			from {top:-300px; opacity:0}
+			to {top:0; opacity:1}
+		}
+
+		.close {
+			color: #32b5a6;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			padding: none;
+			margin: none;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #f19645;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		.logo {
+			text-align: center;
+			padding: 40px 0px 20px;
+		}
+
+		label{
+			font-size: 11pt;
+			margin-bottom: 10px;
+		}
+		
+		.form-login{
+			box-sizing : border-box;
+			width: 100%;
+			padding: 10px;
+			font-size: 11pt;
+			margin-top: 5px;
+			margin-bottom: 20px;
+			border: 1px solid #adadad;
+			border-radius: 5px;
+		}
+		
+		.btn-login{
+			background: #00a090;
+			color: white;
+			font-size: 11pt;
+			width: 100%;
+			border: none;
+			border-radius: 3px;
+			padding: 10px;
+			cursor: pointer;
+			margin: 10px 0px 20px;
+		}
+
+		.btn-login:hover {
+			background: #32b5a6;
+		}
+
+		#btn-forgetpass {
+			color: #232323;
+			text-decoration: none;
+			font-size: 10pt;
+		}
+
+		#btn-forgetpass:hover {
+			color: #00a090;
+		}
+
+	</style>
 </head>
 <body>
 	<div class="navbar" id="navbar">
 		<a class="logo" href="#"><img width="220px" src="../assets/icon/logo.png"></a>
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a  onclick="document.getElementById('id01').style.display='block'" >Login</a></li>
-			<li>
+			<!-- <li><a href="index.html">Home</a></li> -->
+			<li style="cursor: pointer;"><a id="login">Login</a></li>
+			<!-- <li>
 				<a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
-			</li>
+			</li> -->
 		</ul>
-
-		<div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h2>Modal Header</h2>
-      </header>
-      <div class="w3-container">
-        <p>You have two options to close this modal:</p>
-        <p>Click on the "x" or click anywhere outside of the modal!</p>
-      </div>
-      <footer class="w3-container w3-teal">
-        <p>Modal Footer</p>
-      </footer>
-    </div>
-  </div>
-
 	</div>
-	<div id="sidenav" class="sidenav">
+	<!-- <div id="sidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<li><a href="index.html">Home</a></li>
-		<li><a href="login.html">Login</a></li>
-	</div>
+		<li style="cursor: pointer;"><a id="login">Login</a></li>
+	</div> -->
 	<div class="content">		
 		<img class="bg" width="100%" height="100%" style="float: right;" src="../assets/icon/landingpage_ver33.png">
 		<div class="p">
@@ -49,6 +132,25 @@
 			<p style="width: 400px; font-style: italic; color: #72ac8f;">bimbel pertama di Indonesia dengan sistem e-learning telah dipercaya oleh lebih dari 100.000 pelajar di seluruh Indonesia</p>
 			<form action="siswa/dashboard.html" method="get">
 				<button type="submit" class="button-get">Get Started</button>
+			</form>
+		</div>
+	</div>
+	<div id="login-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="logo"><img width="80%" src="../assets/icon/logo.png"></div>
+
+			<form action="siswa/dashboard.html" method="get">
+				<label>Username</label>
+				<input type="text" name="username" class="form-login" required pattern="[A-Za-z]+" title="Input your username" placeholder="Username ..">
+
+				<label>Password</label>
+				<input type="text" name="password" class="form-login" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Password ..">
+
+				<input type="submit" class="btn-login" value="LOGIN"></a>
+				<center>
+					<a id="btn-forgetpass" href="#">Lupa Password</a>
+				</center>
 			</form>
 		</div>
 	</div>
@@ -63,6 +165,7 @@
 			x.className = "navbar";
 		}
 	}
+
 	function openNav() {
 		document.getElementById("sidenav").style.width = "250px";
 	}
@@ -70,15 +173,25 @@
 	function closeNav() {
 		document.getElementById("sidenav").style.width = "0";
 	}
-	// Get the modal
-	var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
+
+	var modal = document.getElementById("login-modal");
+	var login = document.getElementById("login");
+	var close = document.getElementsByClassName("close")[0];
+
+	login.onclick = function() {
+		modal.style.display = "block";
+	}
+
+	close.onclick = function() {
+		modal.style.display = "none";
+	}
+
 	window.onclick = function(event) {
- 	if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
 </script>
 
 </html>
