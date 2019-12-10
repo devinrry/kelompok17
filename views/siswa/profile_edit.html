@@ -6,6 +6,7 @@
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
  	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+ 	<link rel="stylesheet" type="text/css" href="../../assets/js/index.js">
  	<style>
  		.form {
 			border-radius: 5px;
@@ -110,13 +111,13 @@
 			<div class="main">
 				<div class="form">
 					<h1>My Account</h1>
-					<form action="profile_edit.html">
+					<form id="form" action="#">
 						<div class="row">
 							<div class="col-25">
 								<label for="profile">Profile Picture</label>
 							</div>
 							<div class="col-75">
-								<label><img style="width: 100px" src="../../assets/icon/man.png"></label>
+								<label class="profile"></label>
 							</div>
 						</div>
 						<div class="row">
@@ -124,7 +125,7 @@
 								<label for="name">Name</label>
 							</div>
 							<div class="col-75">
-								<label for="name">Isyatun Haniyah</label>
+								<input type="text" id="name"value="Isyatun Haniyah" required disabled>
 							</div>
 						</div>
 						<div class="row">
@@ -132,7 +133,7 @@
 								<label for="nis">NIS</label>
 							</div>
 							<div class="col-75">
-								<label for="nis">12434</label>
+								<input type="text" id="nis" value="12434" required disabled>
 							</div>
 						</div>
 						<div class="row">
@@ -140,7 +141,7 @@
 								<label for="gender">Gender</label>
 							</div>
 							<div class="col-75">
-								<label for="gender">Female</label>
+								<input type="text" id="gender" value="Female" required disabled>
 							</div>
 						</div>
 						<div class="row">
@@ -148,7 +149,7 @@
 								<label for="birth">Place, Date of Birth</label>
 							</div>
 							<div class="col-75">
-								<label for="birth">Gresik, 14 Juli</label>
+								<input type="text" id="birth" value="Gresik, 14 Juli" required>
 							</div>
 						</div>
 						<div class="row">
@@ -156,7 +157,7 @@
 								<label for="address">Address</label>
 							</div>
 							<div class="col-75">
-								<label for="address">Jl. Ahmad Yani gang 8 gresik</label>
+								<input type="text" id="address" value="Jl. Ahmad Yani gang 8 gresik" required>
 							</div>
 						</div>
 						<div class="row">
@@ -164,11 +165,11 @@
 								<label for="email">E-Mail</label>
 							</div>
 							<div class="col-75">
-								<label for="email">ihanihuni@gmail.com</label>
+								<input type="text" id="email" value="ihanihuni@gmail.com" required>
 							</div>
 						</div>
 						<div class="row">
-							<input type="submit" value="Edit">
+							<input type="submit" value="Simpan">
 						</div>
 					</form>
 				</div>
