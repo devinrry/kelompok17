@@ -136,6 +136,12 @@
 			background: #e7e7e7;
 		}
 
+
+.page-active {
+  display: block;
+}
+
+
 	</style>
 </head>
 <body>
@@ -179,10 +185,11 @@
 			<div class="main">
 				<div class="row">
 					<a href="admin_FormTentorProfile.html"><input type="submit" value="Tambah"></a>
-				</div>
+				</div>				
 				<br>
 				<br>
 				<table class="table1">
+					<div id="page1">
 					<tr>
 						<th> No </th>
 						<th> Name </th>
@@ -210,6 +217,8 @@
 						<td><button type="submit">Detail</button></td>
 						<td><button type="delete">Edit</button></td>
 					</tr>
+				</div>
+				<div id="page2">
 					<tr>
 						<td>3</td>
 						<td>Mr. parno</td>
@@ -237,6 +246,8 @@
 						<td><button type="submit">Detail</button></td>
 						<td><button type="delete">Edit</button></td>
 					</tr>
+				</div>
+				<div id="page3">
 					<tr>
 						<td>6</td>
 						<td>Mrs. parno</td>
@@ -263,6 +274,8 @@
 					<td><button type="submit">Detail</button></td>
 					<td><button type="delete">Edit</button></td>
 				</tr>
+			</div>
+			<div id="page4">
 				<tr>
 					<td>9</td>
 					<td>Mrs. parno</td>
@@ -290,6 +303,8 @@
 					<td><button type="submit">Detail</button></td>
 					<td><button type="delete">Edit</button></td>
 				</tr>
+			</div>
+			<div id="page5">
 				<tr>
 					<td>12</td>
 					<td>Mrs. parno</td>
@@ -299,8 +314,12 @@
 					<td><button type="submit">Detail</button></td>
 					<td><button type="delete">Edit</button></td>
 				</tr>
+			</div>
+			<div id="pagination-demo" class="pagination-lg pull-right"></div>
 			</table>
+			
 		</div>
+		
 	</div>
 </div>
 </body>
@@ -317,4 +336,49 @@
 		} 
 	});
 </script>
+<script>
+	$('#pagination-demo').onPageClick(function(){
+totalPages: 5,
+// the current page that show on start
+startPage: 1,
+
+// maximum visible pages
+visiblePages: 5,
+
+initiateStartPageClick: true,
+
+// template for pagination links
+href: false,
+
+// variable name in href template for page number
+hrefVariable: '{{number}}',
+
+// Text labels
+first: 'First',
+prev: 'Previous',
+next: 'Next',
+last: 'Last',
+
+// carousel-style pagination
+loop: false,
+
+// callback function
+onPageClick: function (event, page) {
+	$('.page-active').removeClass('page-active');
+  $('#page'+page).addClass('page-active');
+},
+
+// pagination Classes
+paginationClass: 'pagination',
+nextClass: 'next',
+prevClass: 'prev',
+lastClass: 'last',
+firstClass: 'first',
+pageClass: 'page',
+activeClass: 'active',
+disabledClass: 'disabled'
+
+});
+</script>
+
 </html>
