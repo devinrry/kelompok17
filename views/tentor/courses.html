@@ -7,25 +7,28 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
 	<style>
-		.grid-container ul{
+		.grid-container {
 			margin: 0;
+			margin-top: 20px;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-bottom: 0px;
 			padding: 0;
-			list-style-type:none;
-			display: grid;
-			grid-column-gap:10px; 
-			grid-row-gap:0px;
-			grid-template-columns: repeat(4, auto);
-			grid-template-rows: repeat(2,auto);
 		}
 
 		.grid-container ul li{
+			margin-bottom: 10px;
+			margin-right: 30px;
+			display: inline-block;
+		}
+
+		.card {
 			background-color: rgba(255, 255, 255, 0.8);
 			border-radius: 10px;
 			padding: 20px;
 			font-size: 13px;
 			height: 190px;
 			width: 170px;
-			margin-bottom: 20px;
 		}
 
 		#course {
@@ -44,7 +47,7 @@
 			clear: right;
 		}
 
-		.grid-container ul li:hover {
+		.card:hover {
 			background-color: #1FDBC3;
 		}
 
@@ -55,7 +58,7 @@
 			border: none;
 			border-radius: 4px;
 			cursor: pointer;
-			font-family: 'Lobster', cursive;
+			margin-left: 450px;
 		}
 	</style>
 </head>
@@ -97,87 +100,106 @@
 			</div>
 			<div class="main">
 				<div class="grid-container">
+					<div class="col-3 col-s-12">
 					<ul>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 3rd senior high school, A class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 2rd senior high school, C class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 3rd senior high school</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 2rd senior high school</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 3rd senior high school, A class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 2rd senior high school, C class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 3rd senior high school, A class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 2rd senior high school, C class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 							</ul>
 					<div class=coba>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li><div class="card"></div></li>
+						<li><div class="card"></div></li>
+						<li><div class="card"></div></li>
+						<li><div class="card"></div></li>
 					</ul>
 					</div>
 				</div>
+
 				<button class="btn2" align="left" style="position: relative;
 				width:90px;
 				height:40px;
 				left: 7px;
 				top:7px;">More</button>
 			</div>
+		</div>
 		
 </body>
 <script>
