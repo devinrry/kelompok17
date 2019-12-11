@@ -7,33 +7,31 @@
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
  	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
 	<style>
-/*		.content{
-			padding: 100px 0 0 270px;
-		}*/
-
-		.grid-container ul{
+		.grid-container {
 			margin: 0;
+			margin-top: 20px;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-bottom: 0px;
 			padding: 0;
-			list-style-type:none;
-			display: grid;
-			grid-column-gap:10px; 
-			grid-row-gap:0px;
-			grid-template-columns: repeat(4, auto);
-			grid-template-rows: repeat(2,auto);
-
 		}
 
 		.grid-container ul li{
+			margin-bottom: 10px;
+			margin-right: 30px;
+			display: inline-block;
+		}
+
+		.card {
 			background-color: rgba(255, 255, 255, 0.8);
 			border-radius: 10px;
 			padding: 20px;
 			font-size: 13px;
-			height: 170px;
+			height: 190px;
 			width: 170px;
-			margin-bottom: 20px;
 		}
 
-		.grid-container ul li:hover {
+		.card:hover {
 			background-color: #1FDBC3;
 		}
 
@@ -53,17 +51,6 @@
 			clear: right;
 		}
 
-		.btn1 {
-			background-color: #00a090;
-			color: white;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-
-			font-family: 'Rubik', sans-serif;
-		}
-
 		.btn2 {
 			background-color: #00a090;
 			color: white;
@@ -71,7 +58,7 @@
 			border: none;
 			border-radius: 4px;
 			cursor: pointer;
-			font-family: 'Rubik', sans-serif;
+			margin-left: 450px;
 		}
 
 
@@ -91,7 +78,6 @@
 				<li><a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
 				<li><a class="active" href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
 				<li><a href="schedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
-				<li><a href="record.html"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;Record</a></li>
 			</div>
 		</div>
 		<div class="content">
@@ -114,124 +100,146 @@
 					</li>
 				</div>
 			</div>
-				<button class="btn2" align="right" style="position: relative;
-				width:75px;
-				height:50px;
-				left:17px;
-				top:7px;">Show</button>
 			<div class="main">
 				<div class="grid-container">
+					<div class="col-3 col-s-12">
 			<ul>
 				<li>
+					<div class="card">
 					<a style="text-decoration: none; color: black" href="courses_see.html">
 					<b>Mathematics</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/mtk.png"><br>
 					<p>class with mrs. Lala</p>
-				</a>
+					</a>
+					</div>
 				</li>
 				<li>
+					<div class="card">
 					<a style="text-decoration: none; color: black" href="courses_see.html">
 					<b>Physics</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/fisika.png"><br>
 					<p>class with mrs. Lala</p>
-				</a>
+					</a>
+					</div>
 				</li>
 				<li>
+					<div class="card">
 					<a style="text-decoration: none; color: black" href="courses_see.html">
 					<b>English</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/inggris.png"><br>
 					<p>class with mrs. Lala</p>
-				</a>
+					</a>
+					</div>
 				</li>
 				<li>
+					<div class="card">
 					<a style="text-decoration: none; color: black" href="courses_see.html">
 					<b>Chemistry</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/kimia.png"><br>
 					<p>class with mrs. Lala</p>
-				</a>
+					</a>
+					</div>
 				</li>
 				<li>
+					<div class="card">
 					<a style="text-decoration: none; color: black" href="courses_see.html">
 					<b>Biology</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/biologi.png"><br>
 					<p>class with mrs. Lala</p>
-				</a>
+					</a>
+					</div>
 				</li>
 				<li>
+					<div class="card">
 					<a style="text-decoration: none; color: black" href="courses_see.html">
 					<b>History</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/history.png"><br>
 					<p>class with mrs. Lala</p>
-				</a> 
+					</a>
+					</div> 
 				</li>
 				<li>
+					<div class="card">
 					<a style="text-decoration: none; color: black" href="courses_see.html">
 					<b>Economic</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/Economics.png"><br>
 					<p>class with mrs. Lala</p>
-				</a> 
+					</a>
+					</div> 
 				</li>
 				<li>
+					<div class="card">
 					<a style="text-decoration: none; color: black" href="courses_see.html">
 					<b>Citizenship</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/citizens.png"><br>
 					<p>class with mrs. Lala</p>
-				</a> 
+					</a>
+					</div> 
 				</li>
 			</ul>
 				<div class="coba">
 			<ul>
 				<li>
+					<div class="card">
 					<b>Geographic</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
+					<p>class with mrs. Lala</p>
+					</div> 
 				</li>
 				<li>
+					<div class="card">
 					<b>Sosiology</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
+					<p>class with mrs. Lala</p>
+					</div> 
 				</li>
 				<li>
+					<div class="card">
 					<b>Indonesian</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> 
+					<p>class with mrs. Lala</p>
+					</div> 
 				</li>
 				<li>
-					<!-- <b>Mathematics</b><br><br>
+					<div class="card">
+					<b>Indonesian</b><br><br>
 					Pertemuan minggu ke-3 <br>
 					<img id="course" src="../../assets/icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> -->
+					<p>class with mrs. Lala</p>
+					</div> 
 				</li>
-				<li>
-					<!-- <b>Mathematics</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="../../assets/icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> -->
-				</li>
-				<li>
-					<!-- <b>Mathematics</b><br><br>
-					Pertemuan minggu ke-3 <br>
-					<img id="course" src="../../assets/icon/mtk.png"><br>
-					<p>class with mrs. Lala</p> -->
-				</li>
-				<li></li>
-				<li></li>
+					<li>
+						<div class="card"></div>	
+					</li>
+					<li>
+						<div class="card"></div>	
+					</li>
+					<li>
+						<div class="card"></div>	
+					</li>
+					<li>
+						<div class="card"></div>	
+					</li>
 			</ul>
-		
-		</div>
 			</div>
 		</div>
+		<button class="btn2" align="left" style="position: relative;
+				width:90px;
+				height:40px;
+				left: 7px;
+				top:7px;">More</button>
+			</div>
 	</div>
 </div>
 </body>
@@ -249,13 +257,10 @@
 	});
 </script>
 <script>
-	$(".coba").hide(1000);
+	$(".coba").hide();
 	$(document).ready(function(){
-  		$(".btn1").click(function(){
-    		$(".coba").hide(1000);
-  	});
   	$(".btn2").click(function(){
-    	$(".coba").show(1000);
+    	$(".coba").show(1200);
   	});
 });
 </script>
