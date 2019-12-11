@@ -14,11 +14,11 @@
  		}
 
  		.grid-container ul li{
- 			background-color: #D8BFD8;
+ 			background-color: #EAAC76;
  			border-radius: 10px;
  			padding: 20px;
  			font-size: 13px;
- 			height: 150px;
+ 			height: 120px;
  			width: 800px;
  			margin-bottom: 0px;
  			margin-top: 30px;
@@ -34,15 +34,40 @@
  		ul li p {
  			clear: right;
  		}
-    
- 		
 
     	ul {
       		list-style-type: none;
     	}
 
+    	.kolom ul {
+    		margin: 0;
+			padding: 0;
+			list-style-type:none;
+			display: grid;
+			grid-column-gap:60px; 
+			grid-row-gap:0px;
+			grid-template-columns: repeat(3, auto);
+			grid-template-rows: repeat(2,auto);
+    	}
+
+    	.kolom ul li {
+    		background-color: #EAAC76;
+			border-radius: 10px;
+			padding: 20px;
+			font-size: 13px;
+			height: 80px;
+			width: 300px;
+			margin-top: 160px;
+			margin-bottom: 0px;
+    	}
+
+    	.kolom ul li:hover {
+			background-color: #1FDBC3;
+		}
+
  		.atur {
 			width: 20%;
+			height: 0%;
 			
 		}
 
@@ -164,7 +189,7 @@
 				<div class="grid-container">
 			     <ul>
 				      <li>
-					       <img d="course" src="../../assets/icon/admin5.png" align="right"> 
+					       <img d="course" src="../../assets/icon/admin5.png" align="right" style="width: 200px"> 
 					       <h2>Welcome Back Devi </h2>
 					       Let's work with enjoy				
 					
@@ -226,7 +251,20 @@
                 <li>31</li>
               </ul>
  			  </div>
+
+ 			  <div class="kolom">
+ 			<ul>
+						<li>
+						</li>
+						<li>							
+						</li>
+						<li>
+						</li>
+					</ul>
  		</div>
+ 		</div>
+
+ 		
 </body>
 <script>
 	function toggle(){
