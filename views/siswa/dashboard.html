@@ -7,22 +7,13 @@
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
  	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
  	<style>
- 		.grid-container {
- 			margin-top: 20px;
-      margin-left: 0%;
-      margin-right: 0%;
-      margin-bottom: 0px;
+ 		.grid-container ul{
+      margin: 0;
       padding: 0;
- 		}
+      list-style-type:none;
+    }
 
- 		.grid-container ul li{
- 			margin-bottom: 0px;
- 			margin-top: 30px;
- 			margin-right: 0px;
- 			margin-left : -30px;
- 		}
-
-    .card {
+    .grid-container ul li{
       background-color: #EAAC76;
       color: white;
       border-radius: 10px;
@@ -30,106 +21,113 @@
       font-size: 13px;
       height: 150px;
       width: 800px;
-    }
-
-    .kolom ul{
-      margin: 0;
-      padding: 0;
-      list-style-type:none;
-    }
-
-    .kolom ul li{
-      background-color: #EAAC76;
-      color: white;
-      border-radius: 3px;
-      padding: 20px;
-      font-size: 13px;
-      height: 200px;
-      width: 800px;
       margin-bottom: 0px;
+      margin-top: 30px;
       margin-right: 30px;
       margin-left : 10px;
     }
 
- 		ul li b {
- 			font-size: 14px;
- 			font-style: 
- 		}
+    ul li b {
+      font-size: 14px;
+      font-style: 
+    }
 
- 		ul li p {
- 			clear: right;
- 		}
-<<<<<<< HEAD
- 		* {box-sizing: border-box;}
-    ul {list-style-type: none;}
+    ul li p {
+      clear: right;
+    }
+
+      ul {
+          list-style-type: none;
+      }
+
+      .kolom ul {
+        margin: 0;
+      padding: 0;
+      list-style-type:none;
+      }
+
+      .kolom ul li {
+        background-color: #EAAC76;
+        color: white;
+          border-radius: 3px;
+        padding: 20px;
+          font-size: 13px;
+          height: 200px;
+          width: 800px;
+          margin-bottom: 0px;
+          margin-top: 0px;
+          margin-right: 30px;
+          margin-left : 10px;
+      }
+
     .atur {
-     width: 20%;
+      width: 20%;
+      height: 0%;
+      
+    }
 
-   }
+      .month {
+        padding: 20px 25px;
+        background: #1abc9c;
+        text-align: center;
+      } 
 
-   .month {
-    padding: 20px 25px;
-    width: 100%;
-    background: #1abc9c;
-    text-align: center;
-  }
+      .month ul {
+        margin: 0;
+        padding: 0;
+      }
 
-  .month ul {
-    margin: 0;
-    padding: 0;
-  }
+      .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
 
-  .month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  }
+      .month .prev {
+        float: left;
+        padding-top: 10px;
+      }
 
-  .month .prev {
-    float: left;
-    padding-top: 10px;
-  }
+      .month .next {
+        float: right;
+        padding-top: 10px;
+      }
 
-  .month .next {
-    float: right;
-    padding-top: 10px;
-  }
+      .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+      }
 
-  .weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
-  }
+      .weekdays li {
+        display: inline-block;
+        width: 12.6%;
+        color: #666;
+        text-align: center;
+      }
 
-  .weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    color: #666;
-    text-align: center;
-  }
+      .days {
+        padding: 10px 0;
+        background: #eee;
+        margin: 0;
+      }
 
-  .days {
-    padding: 10px 0;
-    background: #eee;
-    margin: 0;
-  }
+      .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 12%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size:12px;
+        color: #777;
+      }
 
-  .days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size:12px;
-    color: #777;
-  }
-
-  .days li .active {
-    padding: 5px;
-    background: #1abc9c;
-    color: white !important
-  }
+      .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+      }
 </style>
 </head>
 <body>
@@ -169,11 +167,11 @@
  </li>
 </div>
 </div>
-<div class="main">
+<div class="main" style="box-sizing: border-box;">
   <div class="grid-container">
    <ul>
     <li>
-     <img d="course" src="../../assets/icon/admin5.png" align="right"> 
+     <img d="course" src="../../assets/icon/admin5.png" align="right"  style="width: 170px"> 
      <h2>Welcome Back hany </h2>
      Let's work with enjoy				
 
@@ -182,7 +180,7 @@
 </div>
 <br>
 <br>
-<div class="atur" style="position:absolute; border: 1px; top: 100px; right: 95px;">
+<div class="atur" style="position:absolute; border: 1px; top: 112px; right: 15px;">
  <div class="month">      
   <ul>
     <li class="prev">&#10094;</li>
@@ -238,192 +236,7 @@
   <li>31</li>
 </ul>
 </div>
-</div>
-=======
-
-
-    ul {
-      list-style-type: none;
-    }
-
- 		.atur {
-			width: 20%;
-			
-		}
-
-    .month {
-      padding: 20px 25px;
-      background: #1abc9c;
-      text-align: center;
-    } 
-
-    .month ul {
-      margin: 0;
-      padding: 0;
-    }
-
-    .month ul li {
-      color: white;
-      font-size: 20px;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-    }
-
-    .month .prev {
-      float: left;
-      padding-top: 10px;
-    }
-
-    .month .next {
-      float: right;
-      padding-top: 10px;
-    }
-
-    .weekdays {
-      margin: 0;
-      padding: 10px 0;
-      background-color: #ddd;
-    }
-
-    .weekdays li {
-      display: inline-block;
-      width: 12.6%;
-      color: #666;
-      text-align: center;
-    }
-
-    .days {
-      padding: 10px 0;
-      background: #eee;
-      margin: 0;
-    }
-
-    .days li {
-      list-style-type: none;
-      display: inline-block;
-      width: 12%;
-      text-align: center;
-      margin-bottom: 5px;
-      font-size:12px;
-      color: #777;
-    }
-
-    .days li .active {
-      padding: 5px;
-      background: #1abc9c;
-      color: white !important
-    }
-
- 	</style>
- </head>
- <body>
- 	<div class="container">
- 		<div class="sidebar">
- 			<div class="logo">
- 				<img width="100%" src="../../assets/icon/logo.png">
- 				<!-- <a class="active" href="#home">Judul</a> -->
- 			</div>
- 			<div class="sidebar-menu">
- 				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="../../assets/icon/icebear.jpg">
- 				<p style="display: block; text-align: center;">Student</p>
- 				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
- 				<li><a class="active" href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
- 				<li><a href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
- 				<li><a href="schedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
- 			</div>
- 		</div>
- 		<div class="content">
- 			<div class="navbar">
- 				<div onclick="toggle()" class="btn-toggle">
- 					<i class="fa fa-bars" aria-hidden="true"></i>
- 				</div>
- 				<div class="navbar-menu">
- 					<li><a href="../../index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
- 					<li><a href="profile.html">Hai Hanyhuni!</a></li>
- 					<li><a href="#"><i class="fa fa-bell"></i></a></li>
- 					<li>
- 						<form class="search" action="#" method="get">
- 							<input type="text" name="search-text" class="search-text" placeholder="Search ..."></input>
- 							<span>
- 								<button type="submit" name="search" class="search-btn"><i class="fa fa-search"></i>
- 								</button>
- 							</span>
- 						</form>
- 					</li>
- 				</div>
- 			</div>
- 			<div class="main" style="box-sizing: border-box;">
-				<div class="grid-container">
-          <div class="col-9 col-s-12">
-			     <ul>
-				      <li>
-                <div class="card">
-					       <img d="course" src="../../assets/icon/admin5.png" align="right" style="width: 170px"> 
-					       <h2>Welcome Back hany </h2>
-					       Let's study with enjoy
-                 </div>				
-				      </li>
-				  </ul>
-			  </div>
-      </div>
-			         <br><br>
-        <div class="col-3 col-s-12">
-			  <div class="atur" style="position:absolute; border: 1px; top: 112px; right: 15px;">
-			      <div class="month">      
-              <ul>
-                <li class="prev">&#10094;</li>
-                <li class="next">&#10095;</li>
-                <li>July<br>
-                <span style="font-size:18px">2019</span>
-                </li>
-              </ul>
-            </div>
-              <ul class="weekdays">
-                <li>Mo</li>
-                <li>Tu</li>
-                <li>We</li>
-                <li>Th</li>
-                <li>Fr</li>
-                <li>Sa</li>
-                <li>Su</li>
-              </ul>
-
-              <ul class="days">  
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li><span class="active">10</span></li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li>26</li>
-                <li>27</li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li>31</li>
-              </ul>
- 			  </div>
-      </div>
-         <div class="kolom">
+<div class="kolom">
       <ul>
             <li>
               <b>Announcement</b><br>
@@ -435,10 +248,9 @@
               <p>18/10/2019 : mathemaics lesson has begin</p>
             </li>
           </ul>
-    </div>
- 		</div>
+          </div>
+</div>
 
->>>>>>> 98c4e0666c49fba7a28e6f7297f59074dc58fe82
 </body>
 
 <script>
