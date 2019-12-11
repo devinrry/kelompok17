@@ -11,6 +11,11 @@
 			margin: 0;
 			padding: 0;
 			list-style-type:none;
+			display: grid;
+			grid-column-gap:10px; 
+			grid-row-gap:0px;
+			grid-template-columns: repeat(4, auto);
+			grid-template-rows: repeat(2,auto);
 		}
 
 		.grid-container ul li{
@@ -43,17 +48,6 @@
 			background-color: #1FDBC3;
 		}
 
-		.btn1 {
-			background-color: #00a090;
-			color: white;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-
-			font-family: 'Rubik', sans-serif;
-		}
-
 		.btn2 {
 			background-color: #00a090;
 			color: white;
@@ -61,7 +55,7 @@
 			border: none;
 			border-radius: 4px;
 			cursor: pointer;
-			font-family: 'Rubik', sans-serif;
+			font-family: 'Lobster', cursive;
 		}
 	</style>
 </head>
@@ -74,7 +68,7 @@
 			</div>
 			<div class="sidebar-menu">
 				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="../../assets/icon/icebear.jpg">
-				<p style="display: block; text-align: center;">Student</p>
+				<p style="display: block; text-align: center;">Teacher</p>
 				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
 				<li><a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
 				<li><a class="active" href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
@@ -88,7 +82,7 @@
 				</div>
 				<div class="navbar-menu">
 					<li><a href="../../index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
-					<li><a href="profile.html">Hai Lala!</a></li>
+					<li><a href="profile.html">Hai Devi!</a></li>
 					<li><a href="#"><i class="fa fa-bell"></i></a></li>
 					<li>
 						<form class="search" action="#" method="get">
@@ -101,8 +95,6 @@
 					</li>
 				</div>
 			</div>
-				<button class="btn1" align="right">Hide</button>
-				<button class="btn2" align="right">Show</button>
 			<div class="main">
 				<div class="grid-container">
 					<ul>
@@ -180,6 +172,11 @@
 					</ul>
 					</div>
 				</div>
+				<button class="btn2" align="left" style="position: relative;
+				width:90px;
+				height:40px;
+				left: 7px;
+				top:7px;">More</button>
 			</div>
 		
 </body>
@@ -200,6 +197,7 @@
 	});
 </script>
 <script>
+	$(".coba").hide(1000);
 	$(document).ready(function(){
   		$(".btn1").click(function(){
     		$(".coba").hide(1000);
