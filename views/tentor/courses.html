@@ -7,30 +7,28 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
 	<style>
-/*		.content{
-			padding: 100px 0 0 270px;
-		}*/
-
-		.grid-container ul{
+		.grid-container {
 			margin: 0;
+			margin-top: 20px;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-bottom: 0px;
 			padding: 0;
-			list-style-type:none;
-			display: grid;
-			grid-column-gap:10px; 
-			grid-row-gap:0px;
-			grid-template-columns: repeat(4, auto);
-			grid-template-rows: repeat(2,auto);
-
 		}
 
 		.grid-container ul li{
+			margin-bottom: 10px;
+			margin-right: 30px;
+			display: inline-block;
+		}
+
+		.card {
 			background-color: rgba(255, 255, 255, 0.8);
 			border-radius: 10px;
 			padding: 20px;
 			font-size: 13px;
 			height: 190px;
 			width: 170px;
-			margin-bottom: 20px;
 		}
 
 		#course {
@@ -49,19 +47,8 @@
 			clear: right;
 		}
 
-		.grid-container ul li:hover {
+		.card:hover {
 			background-color: #1FDBC3;
-		}
-
-		.btn1 {
-			background-color: #00a090;
-			color: white;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-
-			font-family: 'Rubik', sans-serif;
 		}
 
 		.btn2 {
@@ -71,7 +58,7 @@
 			border: none;
 			border-radius: 4px;
 			cursor: pointer;
-			font-family: 'Rubik', sans-serif;
+			margin-left: 450px;
 		}
 	</style>
 </head>
@@ -84,12 +71,11 @@
 			</div>
 			<div class="sidebar-menu">
 				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="../../assets/icon/icebear.jpg">
-				<p style="display: block; text-align: center;">Student</p>
+				<p style="display: block; text-align: center;">Teacher</p>
 				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
 				<li><a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
 				<li><a class="active" href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
 				<li><a href="schedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
-				<li><a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;Record</a></li>
 			</div>
 		</div>
 		<div class="content">
@@ -99,7 +85,7 @@
 				</div>
 				<div class="navbar-menu">
 					<li><a href="../../index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
-					<li><a href="profile.html">Hai Lala!</a></li>
+					<li><a href="profile.html">Hai Devi!</a></li>
 					<li><a href="#"><i class="fa fa-bell"></i></a></li>
 					<li>
 						<form class="search" action="#" method="get">
@@ -112,86 +98,108 @@
 					</li>
 				</div>
 			</div>
-				<button class="btn1" align="right">Hide</button>
-				<button class="btn2" align="right">Show</button>
 			<div class="main">
 				<div class="grid-container">
+					<div class="col-3 col-s-12">
 					<ul>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 3rd senior high school, A class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 2rd senior high school, C class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 3rd senior high school</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 2rd senior high school</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 3rd senior high school, A class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 2rd senior high school, C class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 3rd senior high school, A class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 						<li>
+							<div class="card">
 							<a style="text-decoration: none; color: black" href="courses_add.html">
 							<b>Mathematics</b><br><br>
 							Pertemuan minggu ke-3 <br>
 							<img id="course" src="../../assets/icon/mtk.png"><br>
 							<p>class with 2rd senior high school, C class</p>
-						</a>
+							</a>
+							</div>
 						</li>
 							</ul>
 					<div class=coba>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li><div class="card"></div></li>
+						<li><div class="card"></div></li>
+						<li><div class="card"></div></li>
+						<li><div class="card"></div></li>
 					</ul>
 					</div>
 				</div>
+
+				<button class="btn2" align="left" style="position: relative;
+				width:90px;
+				height:40px;
+				left: 7px;
+				top:7px;">More</button>
 			</div>
+		</div>
 		
 </body>
 <script>
@@ -211,6 +219,7 @@
 	});
 </script>
 <script>
+	$(".coba").hide(1000);
 	$(document).ready(function(){
   		$(".btn1").click(function(){
     		$(".coba").hide(1000);

@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-	$.fn.compekFile = function () {
-        this.html(`<img style="max-width:100px; cursor:pointer" src="../../assets/icon/man.png" alt="Profile" id="prev" class="pointer" 
-            title="Ubah Foto Profil"/><input style="display:none" type="file" id="profilePic" name="profilePic" 
-            class="hidden" accept="image/*">`);
+	$.fn.imagefile = function () {
+        this.html(`<img style="max-width:100px; cursor:pointer" src="../../assets/icon/man.png" alt="Profile" 
+            id="prev" class="pointer" title="Ubah Foto Profil"/>
+            <input style="display:none" type="file" id="profile-picture" name="profile-picture" class="hidden" accept="image/*">`);
 
         function readURL(input) {
             if (input.files && input.files[0]) {
@@ -18,11 +18,11 @@ $(document).ready(function () {
             }
         }
 
-        $("#profilePic").change(function () {
+        $("#profile-picture").change(function () {
             readURL(this);
         });
     };
 
-    $('.image').compekFile();
+    $('.image').imagefile();
 
 });

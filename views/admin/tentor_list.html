@@ -12,7 +12,7 @@
 		}
 		*/
 		.table1 {
-			font-family: 'Rubik', sans-serif;
+			
 			color: #444;
 			border-collapse: collapse;
 			width: 100%;
@@ -42,7 +42,6 @@
 			border-radius: 4px;
 			cursor: pointer;
 			float: right;
-			font-family: 'Rubik', sans-serif;
 		}
 
 		.main button[type=submit]:hover {
@@ -56,8 +55,7 @@
 			border: none;
 			border-radius: 4px;
 			cursor: pointer;
-			float: right;
-			font-family: 'Rubik', sans-serif;
+			float: right;			
 		}
 
 		.main button[type=delete]:hover {
@@ -72,100 +70,42 @@
 			border-radius: 4px;
 			cursor: pointer;
 			float: right;
-			font-family: 'Rubik', sans-serif;
 		}
 
 		.main input[type=submit]:hover {
 			background-color: #00b099;
 		}
 
-		.btn {
-			border: none;
-			background-color: inherit;
-			padding: 14px 28px;
-			font-size: 16px;
-			cursor: pointer;
-			display: inline-block;
-		}
-		
-		.success {
-			color: green;
+
+		.page-active {
+		  display: block;
 		}
 
-		.success:hover {
-			background-color: #4CAF50;
-			color: white;
+		.center {
+		  text-align: center;
 		}
 
-		/* Blue */
-		.info {
-			color: dodgerblue;
+		.pagination {
+		  display: inline-block;
 		}
 
-		.info:hover {
-			background: #2196F3;
-			color: white;
+		.pagination a {
+		  color: black;
+		  float: left;
+		  padding: 8px 16px;
+		  text-decoration: none;
+		  transition: background-color .3s;
+		  border: 1px solid #ddd;
+		  margin: 0 4px;
 		}
 
-		/* Orange */
-		.warning {
-			color: orange;
+		.pagination a.active {
+		  background-color: #4CAF50;
+		  color: white;
+		  border: 1px solid #4CAF50;
 		}
 
-		.warning:hover {
-			background: #ff9800;
-			color: white;
-		}
-
-		/* Red */
-		.danger {
-			color: red;
-		}
-
-		.danger:hover {
-			background: #f44336;
-			color: white;
-		}
-
-		/* Gray */
-		.default {
-			color: black;
-		}
-
-		.default:hover {
-			background: #e7e7e7;
-		}
-
-
-.page-active {
-  display: block;
-}
-
-.center {
-  text-align: center;
-}
-
-.pagination {
-  display: inline-block;
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
-  margin: 0 4px;
-}
-
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
-}
-
-.pagination a:hover:not(.active) {background-color: #ddd;}
+		.pagination a:hover:not(.active) {background-color: #ddd;}
 	</style>
 </head>
 <body>
@@ -183,7 +123,6 @@
 				<li><a href="student_list.html"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;Student</a></li>
 				<li><a class="active" href="tentor_list.html"><i class="fa fa-user-graduate"></i>&nbsp;&nbsp;&nbsp;Teacher</a></li>
 				<li><a href="schedule_list.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
-				<li><a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;Record</a></li>
 			</div>
 		</div>
 		<div class="content">
@@ -193,7 +132,7 @@
 				</div>
 				<div class="navbar-menu">
 					<li><a href="../../index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
-					<li><a href="profile.html">Hai Devi!</a></li>
+					<li><a href="profile.html">Hai Admin!</a></li>
 					<li><a href="#"><i class="fa fa-bell"></i></a></li>
 					<li>
 						<form class="search" action="#" method="get">
@@ -208,7 +147,8 @@
 			</div>
 			<div class="main">
 				<div class="row">
-					<a href="admin_FormTentorProfile.html"><input type="submit" value="Tambah"></a>
+					<center> <h1 >All Teacher's</h1> </center>
+					<a href="tentor_form.html"><input type="submit" value="Tambah"></a>
 				</div>				
 				<br>
 				<br>
@@ -270,7 +210,7 @@
 						<td><button type="submit">Detail</button></td>
 						<td><button type="delete">Edit</button></td>
 					</tr>
-				</div>
+				
 			<div id="pagination-demo" class="pagination-lg pull-right"></div>
 			</table>
 			
@@ -286,6 +226,7 @@
 				<a href="#">&raquo;</a>
 				</div>
 			</div>
+	</div>
 	</div>
 </div>
 </body>
