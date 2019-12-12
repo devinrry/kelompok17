@@ -7,54 +7,68 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
 	<style>
-	.grid-container ul{
-			margin: 0;
-			padding: 0;
-			list-style-type:none;
-		}
+		.subject ul { list-style-type: none }
 
-		.grid-container ul li{
+		.subject-menu > ul { padding: 0; }
+
+		.subject-menu a {
+			display: block;
+			vertical-align: middle;
+			text-decoration: none;
+			padding: 6px;
 			background-color: rgba(188, 236, 218, 0.5);
-			border-radius: 10px;
-			padding: 20px;
-			font-size: 13px;
-			height: 1300px;
-			width: 800px;
-			margin-bottom: 20px;
-			margin-left: 80px;
+			border-radius: 4px;
+			margin-bottom: 1px;
+			color: black;
+			-moz-transition: background-color 0.25s linear;
+			-webkit-transition: background-color 0.25s linear;
+			-o-transition: background-color 0.25s linear;
+			transition: background-color 0.25s linear;
+			-moz-transition-delay: 0.15s;
+			-webkit-transition-delay: 0.15s;
+			-o-transition-delay: 0.15s;
+			transition-delay: 0.15s;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
 		}
 
-
-		.menu ul {
-   			list-style-type: none;
-   	 		margin: 0;
-    		padding: 0;
+		.subject-menu a:hover {
+			color: black;
+			-moz-transition: background-color 0.1s linear;
+			-webkit-transition: background-color 0.1s linear;
+			-o-transition: background-color 0.1s linear;
+			transition: background-color 0.1s linear;
 		}
 
-		.menu li {
-   			padding: 8px;
-    		margin-bottom: 7px;
-    		background-color: #33b5e5;
-    		color: #ffffff;
-    		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		.subject-menu .active > a:hover,
+		.subject-menu .selected > a,
+		.subject-menu a:hover { background-color: #32b5a6; }
+
+		.subject-menu .selected > a {
+			color: #f53d3e;
+			font-weight: bold;
+			text-decoration: none;
 		}
 
-		.menu li:hover {
-    		background-color: #0099cc;
-		}
-		.pd-l-16 {
-    		padding-left: 16px;
-		}
-		.bd-none {
-    		border-style: none !important;
-		}
-		.f-left {
-    		float: left;
-		}
-		#pembatas{
-			border-style: outset;
+		.subject-menu .active > a { background-color: #e1e3e9; }
+
+		.subject-menu .closed > a,
+		.subject-menu .opened > a {
+			padding-left: 24px;
+			background-position: 4px 8px;
+			background-repeat: no-repeat;
 		}
 
+		.sub-menu {
+			display: none;
+		}
+
+		.active {
+			display: block;
+		}
 
 
 
@@ -97,50 +111,39 @@
 				</div>
 			</div>
 			<div class="main">
-				<h1>Mathematics</h1>
-				<div class="grid-container">
-					<ul>
-						<li>
-							<h2 id="pembatas">Part1 : Perkenalan</h2>					
-							<h3><img src="../../assets/icon/powerpoint.jpg" width="24" height="24" alt="powerpoint" style="float:left; margin:0px 8px 4px 25px;"/>introduction
-							</h3>
-
-							<h2 id="pembatas">Part2 : Menghitung</h2>					
-							<h3><img src="../../assets/icon/powerpoint.jpg" width="24" height="24" alt="powerpoint" style="float:left; margin:0px 8px 4px 25px;"/>materi ke 2
-							</h3>
-
-							<h2 id="pembatas">Part3 : Penjumlahan</h2>					
-							<h3><img src="../../assets/icon/powerpoint.jpg" width="24" height="24" alt="powerpoint" style="float:left; margin:0px 8px 4px 25px;"/>materi ke 3
-							</h3>
-
-							<h2 id="pembatas">Part4 : </h2>
-							<h2 id="pembatas">Part5 : </h2>
-							<h2 id="pembatas">Part6 : </h2>
-							<h2 id="pembatas">Part7 : </h2>
-							<h2 id="pembatas">Part8 : </h2>
-							<h2 id="pembatas">Part9 : </h2>
-							<h2 id="pembatas">Part10 : </h2>
-							<h2 id="pembatas">Part11 : </h2>
-							<h2 id="pembatas">Part12 : </h2>
-							<h2 id="pembatas">Part13 : </h2>
-							<h2 id="pembatas">Part14 : </h2>
-							<h2 id="pembatas">Part15 : </h2>
-							<h2 id="pembatas">Part16 : </h2>
-							<h2 id="pembatas">Part17 : </h2>
-							<h2 id="pembatas">Part18 : </h2>
-							<h2 id="pembatas">Part19 : </h2>
-							<h2 id="pembatas">Part20 : </h2>
-							<h2 id="pembatas">Part21 : </h2>
-							<h2 id="pembatas">Part22 : </h2>
-							<h2 id="pembatas">Part23 : </h2>
-							<h2 id="pembatas">Part24 : </h2>
-							<h2 id="pembatas">Part25 : </h2>
-
+				<div class="subject" page="">
+					<h1>Mathematics</h1>	
+					<ul class="subject-menu">
+						<li><a class="menu">Part 1 : Persamaan dan Fungsi Kuadrat</a>
+							<ul class="sub-menu">
+								<li><a class="isi" href="#">Basic Skills - Teori</a></li>
+								<li><a class="isi" href="#">Basic Skills - Soal Latihan</a></li>
+							</ul>
 						</li>
-						
-					</ul>
-				</div>	
-            </div>
+						<li><a class="menu">Part 2 : Persamaan dan Fungsi Kuadrat</a>
+							<ul class="sub-menu">
+								<li><a href="#">Basic Skills - Teori</a></li>
+								<li><a href="#">Basic Skills - Soal Latihan</a></li>
+							</ul>
+						</li>
+						<li><a class="menu">Part 3 : Persamaan dan Fungsi Kuadrat</a>
+							<ul class="sub-menu">
+								<li><a href="#">Basic Skills - Teori</a></li>
+								<li><a href="#">Basic Skills - Soal Latihan</a></li>
+							</ul>
+						</li>
+						<li><a class="menu">Part 4 : Persamaan dan Fungsi Kuadrat</a>
+							<ul class="sub-menu">
+								<li><a href="#">Basic Skills - Teori</a></li>
+								<li><a href="#">Basic Skills - Soal Latihan</a></li>
+							</ul>
+						</li>
+					</ul>	
+					<button class="more">More</button>		
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script>
 	function toggle(){
@@ -154,6 +157,41 @@
 			$(".search-text").css("width", "900px");
 		} 
 	});
+</script>
+<script type="text/javascript">
+	
+
+	$(".more").click(function(){
+		console.log("aaa");
+		var page = $(".subject").attr("page");
+		page = Number(page);
+		if (page==""){
+			page = 1;
+		} else {
+			page += 1;
+		}
+		$(".subject").attr("page", page);
+		if (page == 2) {
+			$(".more").hide();
+		}
+		var path = "../../assets/json/json.json";
+		$.getJSON(path, function (data){
+			console.log(data);
+			// pageData = data[]
+		})
+	})
+</script>
+<script>
+	var toggler = document.getElementsByClassName("menu");
+	var i;
+
+	for (i = 0; i < toggler.length; i++) {
+		toggler[i].addEventListener("click", function() {
+			// this.parentElement.querySelector(".subject-menu").classList.toggle("active");
+			this.parentElement.querySelector(".sub-menu").classList.toggle("active");
+			this.classList.toggle("caret-down");
+		});
+	}
 </script>
 
 </html>
