@@ -3,22 +3,23 @@
 		"page1":[
 			{"part": "Part 5 : Persamaan dan Fungsi Kuadrat", 
 				"skils": [
-					{"Basic Skills - Teori"}, {"Basic Skills - Soal Latihan"}
+					"Basic Skills - Teori",
+                                        "Basic Skills - Soal Latihan"
 				]
 			},
 			{"part": "Part 6 : Persamaan dan Fungsi Kuadrat", 
 				"skils": [
-					{"Basic Skills - Teori"}, {"Basic Skills - Soal Latihan"}
+					"Basic Skills - Teori", "Basic Skills - Soal Latihan"
 				]
 			},
 			{"part": "Part 7 : Persamaan dan Fungsi Kuadrat", 
 				"skils": [
-					{"Basic Skills - Teori"}, {"Basic Skills - Soal Latihan"}
+					"Basic Skills - Teori", "Basic Skills - Soal Latihan"
 				]
 			},
 			{"part": "Part 8 : Persamaan dan Fungsi Kuadrat", 
 				"skils": [
-					{"Basic Skills - Teori"}, {"Basic Skills - Soal Latihan"}
+					"Basic Skills - Teori", "Basic Skills - Soal Latihan"
 				]
 			}
 		]
@@ -27,22 +28,22 @@
 		"page2":[
 			{"part": "Part 9 : Persamaan dan Fungsi Kuadrat", 
 				"skils": [
-					{"Basic Skills - Teori"}, {"Basic Skills - Soal Latihan"}
+					"Basic Skills - Teori", "Basic Skills - Soal Latihan"
 				]
 			},
 			{"part": "Part 10 : Persamaan dan Fungsi Kuadrat", 
 				"skils": [
-					{"Basic Skills - Teori"}, {"Basic Skills - Soal Latihan"}
+					"Basic Skills - Teori", "Basic Skills - Soal Latihan"
 				]
 			},
 			{"part": "Part 11 : Persamaan dan Fungsi Kuadrat", 
 				"skils": [
-					{"Basic Skills - Teori"}, {"Basic Skills - Soal Latihan"}
+					"Basic Skills - Teori", "Basic Skills - Soal Latihan"
 				]
 			},
 			{"part": "Part 12 : Persamaan dan Fungsi Kuadrat", 
 				"skils": [
-					{"Basic Skills - Teori"}, {"Basic Skills - Soal Latihan"}
+					"Basic Skills - Teori", "Basic Skills - Soal Latihan"
 				]
 			}
 		]
