@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<style>
 		.subject ul { list-style-type: none }
 
@@ -145,12 +146,14 @@
 		</div>
 	</div>
 </body>
+
 <script>
 	function toggle(){
 		document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
 		document.getElementsByClassName('content')[0].classList.toggle('collapsed');
 	}
 </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 	$(window).resize(function() {
 		if ($(".content").width() > 1200) {
@@ -158,9 +161,8 @@
 		} 
 	});
 </script>
-<script type="text/javascript">
-	
 
+<script type="text/javascript">
 	$(".more").click(function(){
 		console.log("aaa");
 		var page = $(".subject").attr("page");
@@ -174,13 +176,14 @@
 		if (page == 2) {
 			$(".more").hide();
 		}
-		var path = "https://github.com/devinrry/kelompok17/blob/master/assets/json/json.json";
+		var path = "https://raw.githubusercontent.com/devinrry/kelompok17/master/assets/json/json.json";
 		$.getJSON(path, function (data){
 			console.log(data);
 			// pageData = data[]
-		})
+		});
 	})
 </script>
+
 <script>
 	var toggler = document.getElementsByClassName("menu");
 	var i;
