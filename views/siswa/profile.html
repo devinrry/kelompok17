@@ -6,65 +6,9 @@
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
  	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+ 	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
  	<style>
- 		.form {
-			border-radius: 5px;
-			padding: 0px 20px 20px 20px;
-		}
-
-		.form input[type=text], select, textarea {
-			width: 100%;
-			padding: 12px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			resize: vertical;
-		}
-
-		.form label {
-			padding: 12px 12px 12px 0;
-			display: inline-block;
-		}
-
-		.form input[type=submit] {
-			background-color: #4CAF50;
-			color: white;
-			margin-top: 20px;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			float: right;
-		}
-
-		.form input[type=submit]:hover {
-			background-color: #45a049;
-		}
-
-
-		.col-25 {
-			float: left;
-			width: 25%;
-			margin-top: 6px;
-		}
-
-		.col-75 {
-			float: left;
-			width: 75%;
-			margin-top: 6px;
-		}
-
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		@media screen and (max-width: 600px) {
-			.col-25, .col-75, input[type=submit] {
-				width: 100%;
-				margin-top: 0;
-			}
-		}
+ 		
  	</style>
 </head>
 <body>
@@ -75,9 +19,9 @@
 				<!-- <a class="active" href="#home">Judul</a> -->
 			</div>
 			<div class="sidebar-menu">
-				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="../../assets/icon/icebear.jpg">
-				<p style="display: block; text-align: center;">Student</p>
-				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
+				<img class="icon" src="../../assets/icon/icebear.jpg">
+				<p class="block text-center">Student</p>
+				<li class="header">MAIN MENU</li>
 				<li><a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
 				<li><a href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
 				<li><a href="schedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
@@ -108,58 +52,58 @@
 					<h1>My Account</h1>
 					<form action="profile_edit.html">
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="profile">Profile Picture</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<label><img style="width: 100px" src="../../assets/icon/man.png"></label>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="name">Name</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<label for="name">: Isyatun Haniyah</label>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="nis">NIS</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<label for="nis">: 12434</label>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="gender">Gender</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<label for="gender">: Female</label>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="birth">Place, Date of Birth</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<label for="birth">: Gresik, 14 Juli</label>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="address">Address</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<label for="address">: Jl. Ahmad Yani gang 8 gresik</label>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="email">E-Mail</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<label for="email">: ihanihuni@gmail.com</label>
 							</div>
 						</div>

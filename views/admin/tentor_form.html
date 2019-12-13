@@ -6,73 +6,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 	<style>
-		/*.content{
-			padding: 100px 0 0 270px;
-			font-family: 'Rubik', sans-serif;
-		}*/
-
-		* {
-			box-sizing: border-box;
-		}
-
-		.form {
-			border-radius: 5px;
-			padding: 0px 20px 20px 20px;
-		}
-
-		.form input[type=text], select, textarea {
-			width: 100%;
-			padding: 12px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			resize: vertical;
-		}
-
-		.form label {
-			padding: 12px 12px 12px 0;
-			display: inline-block;
-		}
-
-		.form input[type=submit] {
-			background-color: #4CAF50;
-			color: white;
-			margin-top: 20px;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			float: right;
-		}
-
-		.form input[type=submit]:hover {
-			background-color: #45a049;
-		}
-
-		.col-25 {
-			float: left;
-			width: 25%;
-			margin-top: 6px;
-		}
-
-		.col-75 {
-			float: left;
-			width: 75%;
-			margin-top: 6px;
-		}
-
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		@media screen and (max-width: 600px) {
-			.col-25, .col-75, input[type=submit] {
-				width: 100%;
-				margin-top: 0;
-			}
-		}
+		
 
 	</style>
 </head>
@@ -80,13 +16,13 @@
 	<div class="container">
 		<div class="sidebar">
 			<div class="logo">
-				<img width="100%" src="../../assets/icon/logo.png">
+				<img src="../../assets/icon/logo.png">
 				<!-- <a class="active" href="#home">Judul</a> -->
 			</div>
 			<div class="sidebar-menu">
-				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="../../assets/icon/icebear.jpg">
-				<p style="display: block; text-align: center;">Admin</p>
-				<li class="header" style="padding: 20px 20px 10px 25px; font-size:16px">MAIN MENU</li>
+				<img class="icon" src="../../assets/icon/icebear.jpg">
+				<p class="block text-center">Admin</p>
+				<li class="header">MAIN MENU</li>
 				<li><a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
 				<li><a href="student_list.html"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;Student</a></li>
 				<li><a class="active" href="tentor_list.html"><i class="fa fa-user-graduate"></i>&nbsp;&nbsp;&nbsp;Teacher</a></li>
@@ -118,75 +54,75 @@
 					<h1>Please Enter The Teacher Profile</h1>
 					<form action="tentor_list.html">
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="teachername">Teacher Name</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<input type="text" id="teachername" name="teachername" required 
 								pattern="[A-Za-z]+" title="Please input alphabets only">
 								<!-- oninvalid="setCustomValidity('Please input alphabets only')" -->
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="nik">NIK</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<input type="text" id="nik" name="nik" required 
 								pattern="[0-9]+" title="Please input number only">
 								<!-- oninvalid="setCustomValidity('Please input alphabets only')" -->
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="gender">Gender</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Male</label>
 								<label><input type="radio" name="jenis_kelamin" value="perempuan" /> Female</label>
 								<!-- oninvalid="setCustomValidity('Please input alphabets only')" -->
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="placedate">Place, Date of Birth</label>
 							</div>
-							<div class="col-25">
+							<div class="col-3">
 								<input type="text" id="place" name="place" required 
 								pattern="[A-Za-z]+" title="Please input alphabets only">
 								<!-- oninvalid="setCustomValidity('Please input alphabets only')" -->
 							</div>
-							<div class="col-25">
+							<div class="col-3">
 								<input type="text" id="date" name="date" required 
 								pattern="[0-9]+" title="Please input number only">
 								<!-- oninvalid="setCustomValidity('Please input alphabets only')" -->
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="address">Address</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<input type="text" id="address" name="address" required 
 								pattern="[A-Za-z]+" title="Please input alphabets only">
 								<!-- oninvalid="setCustomValidity('Please input alphabets only')" -->
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="email">E-Mail</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<input type="text" id="Email" name="Email" required 
 								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please input your mail only">
 								<!-- oninvalid="setCustomValidity('Please input alphabets only')" -->
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="subjects">Subject</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<select id="day" name="day" required>
 									<option>Mathematic</option>
 									<option>Physics</option>
@@ -204,10 +140,10 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-25">
+							<div class="col-3">
 								<label for="GradeT">Grade of teach</label>
 							</div>
-							<div class="col-75">
+							<div class="col-9">
 								<select>
 									<option>4rd of elementary school </option>
 									<option>5rd of elementary school </option>
