@@ -6,10 +6,12 @@
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
  	<link rel="stylesheet" type="text/css" href="../../assets/css/header.css">
+ 	<script src="../../assets/js/jquery.min.js"></script>
  	<style>
  		.form {
 			border-radius: 5px;
 			padding: 0px 20px 20px 20px;
+			font-family: 'Rubik', sans-serif;
 		}
 
 		.form input[type=text], select, textarea {
@@ -18,6 +20,7 @@
 			border: 1px solid #ccc;
 			border-radius: 4px;
 			resize: vertical;
+			font-family: 'Rubik', sans-serif;
 		}
 
 		.form label {
@@ -34,6 +37,7 @@
 			border-radius: 4px;
 			cursor: pointer;
 			float: right;
+			font-family: 'Rubik', sans-serif;
 		}
 
 		.form input[type=submit]:hover {
@@ -66,53 +70,53 @@
 			}
 		}
  	</style>
- </head>
- <body>
- 	<div class="container">
- 		<div class="sidebar">
- 			<div class="logo">
- 				<img width="100%" src="../../assets/icon/logo.png">
- 				<!-- <a class="active" href="#home">Judul</a> -->
- 			</div>
- 			<div class="sidebar-menu">
- 				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="../../assets/icon/icebear.jpg">
- 				<p style="display: block; text-align: center;">Teacher</p>
- 				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="logo">
+				<img width="100%" src="../../assets/icon/logo.png">
+				<!-- <a class="active" href="#home">Judul</a> -->
+			</div>
+			<div class="sidebar-menu">
+				<img style="border-radius: 50%; width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto; padding: 10px" src="../../assets/icon/icebear.jpg">
+				<p style="display: block; text-align: center;">Teacher</p>
+				<li class="header" style="padding: 20px 20px 10px 25px; font-size:14px">MAIN MENU</li>
 				<li><a href="dashboard.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Dashboard</a></li>
 				<li><a href="courses.html"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;Courses</a></li>
 				<li><a href="schedule.html"><i class="fa fa-calendar-alt"></i>&nbsp;&nbsp;&nbsp;Schedule</a></li>
- 			</div>
- 		</div>
- 		<div class="content">
- 			<div class="navbar">
- 				<div onclick="toggle()" class="btn-toggle">
- 					<i class="fa fa-bars" aria-hidden="true"></i>
- 				</div>
- 				<div class="navbar-menu">
- 					<li><a href="../../index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
- 					<li><a href="profile.html">Hai Devi!</a></li>
- 					<li><a href="#"><i class="fa fa-bell"></i></a></li>
- 					<li>
- 						<form class="search" action="#" method="get">
- 							<input type="text" name="search-text" class="search-text" placeholder="Search ..."></input>
- 							<span>
- 								<button type="submit" name="search" class="search-btn"><i class="fa fa-search"></i>
- 								</button>
- 							</span>
- 						</form>
- 					</li>
- 				</div>
- 			</div>
- 			<div class="main">
- 				<div class="form">
+			</div>
+		</div>
+		<div class="content">
+			<div class="navbar">
+				<div onclick="toggle()" class="btn-toggle">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="navbar-menu">
+					<li><a href="../../index.html"><i class="fa fa-sign-out-alt logout"></i></a></li>
+					<li><a href="profile.html">Hai Hanyhuni!</a></li>
+					<li><a href="#"><i class="fa fa-bell"></i></a></li>
+					<li>
+						<form class="search" action="#" method="get">
+							<input type="text" name="search-text" class="search-text" placeholder="Search ..."></input>
+							<span>
+								<button type="submit" name="search" class="search-btn"><i class="fa fa-search"></i>
+								</button>
+							</span>
+						</form>
+					</li>
+				</div>
+			</div>
+			<div class="main">
+				<div class="form">
 					<h1>My Account</h1>
-					<form action="profile_edit.html">
+					<form id="form" action="profile.html">
 						<div class="row">
 							<div class="col-25">
 								<label for="profile">Profile Picture</label>
 							</div>
 							<div class="col-75">
-								<label><img style="width: 100px" src="../../assets/icon/man.png"></label>
+								<label class="image"></label>
 							</div>
 						</div>
 						<div class="row">
@@ -120,7 +124,7 @@
 								<label for="name">Name</label>
 							</div>
 							<div class="col-75">
-								<label for="name">: Isyatun Haniyah</label>
+								<input type="text" id="name"value="Isyatun Haniyah" required disabled>
 							</div>
 						</div>
 						<div class="row">
@@ -128,7 +132,7 @@
 								<label for="nis">NIK</label>
 							</div>
 							<div class="col-75">
-								<label for="nik">: 12434382948373</label>
+								<input type="text" id="nik" value="12434382948373" required disabled>
 							</div>
 						</div>
 						<div class="row">
@@ -136,7 +140,7 @@
 								<label for="email">Subject</label>
 							</div>
 							<div class="col-75">
-								<label for="email">: Mathematics, Physics</label>
+								<input type="text" id="email" value="Mathematics, Physics" required disabled>
 							</div>
 						</div>
 						<div class="row">
@@ -144,7 +148,7 @@
 								<label for="email">Grade of teach</label>
 							</div>
 							<div class="col-75">
-								<label for="email">: 2rd of junior highschool</label>
+								<input type="text" id="email" value="2rd of junior highschool" required disabled>
 							</div>
 						</div>
 						<div class="row">
@@ -152,7 +156,7 @@
 								<label for="gender">Gender</label>
 							</div>
 							<div class="col-75">
-								<label for="gender">: Female</label>
+								<input type="text" id="gender" value="Female" required disabled>
 							</div>
 						</div>
 						<div class="row">
@@ -160,7 +164,7 @@
 								<label for="birth">Place, Date of Birth</label>
 							</div>
 							<div class="col-75">
-								<label for="birth">: Gresik, 14 Juli</label>
+								<input type="text" id="birth" value="Gresik, 14 Juli" required>
 							</div>
 						</div>
 						<div class="row">
@@ -168,7 +172,7 @@
 								<label for="address">Address</label>
 							</div>
 							<div class="col-75">
-								<label for="address">: Jl. Ahmad Yani gang 8 gresik</label>
+								<input type="text" id="address" value="Jl. Ahmad Yani gang 8 gresik" required>
 							</div>
 						</div>
 						<div class="row">
@@ -176,29 +180,30 @@
 								<label for="email">E-Mail</label>
 							</div>
 							<div class="col-75">
-								<label for="email">: ihanihuni@gmail.com</label>
+								<input type="text" id="email" value="ihanihuni@gmail.com" required>
 							</div>
 						</div>
 						<div class="row">
-							<input type="submit" value="Edit">
-						</div>
+							<a href="profile.html"><input type="submit" value="Simpan"></a>
 					</form>
 				</div>
- 			</div>
- 		</div>
- 	</div>
- </body>
- <script>
- 	function toggle(){
- 		document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
- 		document.getElementsByClassName('content')[0].classList.toggle('collapsed');
- 	}
- </script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
- 	$(window).resize(function() {
- 		if ($(".content").width() > 1200) {
- 			$(".search-text").css("width", "900px");
- 		} 
- 	});
- </script>
- </html>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	function toggle(){
+		document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed');
+		document.getElementsByClassName('content')[0].classList.toggle('collapsed');
+	}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	$(window).resize(function() {
+		if ($(".content").width() > 1200) {
+			$(".search-text").css("width", "900px");
+		} 
+	});
+</script>
+<script src="../../assets/js/index.js"></script>
+</html>
+
